@@ -90,11 +90,12 @@ nav a {
     background-image: none;
     background-color: black;
     height: 50em;
+    z-index: -200;
 }
 
 #homefooter {
     position: absolute;
-    
+    z-index: 200;
     width: 100%;
     height: 10rem;
     background-color: #FFDB4D;
@@ -130,11 +131,16 @@ nav a {
     height: 48em;
     background-image: url(images/background.png);
     background-repeat: no-repeat;
+    z-index: 1;
 }
 
 #poligons img {
     vertical-align: middle;
-    margin-top: -300px;
+    margin-top: -330px;
+}
+
+#poligons p {
+    position: absolute;
 }
 
 #information {
