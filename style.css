@@ -1,8 +1,12 @@
 body {
     font-family: "Roboto Condensed";
+    font-size: 1.rem;
     margin: 0;
     background-image: url(images/background.png);
+}
 
+p {
+    line-height: 1.4;
 }
 
 .menu {
@@ -70,7 +74,7 @@ nav a {
 .footer {
     background-color: #FFDB4D;
     position: absolute;
-    margin-top: 10vw;
+    margin-top: 50vw;
     width: 100%;
     text-align: center;
     font-family: "Avenir LT Std";
@@ -156,6 +160,8 @@ nav a {
     position: absolute;
 }
 
+
+
 #information {
     background-image: url(images/background2.png);
     background-repeat: no-repeat;
@@ -163,6 +169,104 @@ nav a {
     height: 45em;
     position: relative;
     top: 48em;
+}
+
+.openinghours {
+    width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+}
+
+h3 {
+   font-family: 'Avenir LT Std', serif;
+    font-weight: 100;
+}
+
+.vestergade {
+    width: 50%;
+    float: left;
+}
+
+.Vopening {
+    float: right;
+    margin-top: -21vw;
+}
+
+.vestergadeh2 {
+    font-family: 'Avenir LT Std', serif;
+    float: right;
+    margin-right: 5%;
+}
+
+.vestergadeopeningbck {
+    float: right;
+    margin-right: 5%;
+    top: 0;
+}
+
+.vestergadeh3{
+    float: right;
+    margin-right: -28%;
+    margin-top: 1.5vw;
+}
+
+.vestergadetext {
+    width: 35%;
+    float: left;
+    margin-top: 11vw;
+    text-align: right;
+}
+
+.vestergadeopening {
+    float: right;
+    width: 25%;
+    margin-top: 4vw;
+    margin-right: -31%;
+    line-height: 1.6;
+}
+
+.fredensgade {
+    width: 50%;
+    float: right;
+}
+
+.fredensgadetext {
+    width: 35%;
+    float: right;
+    margin-top: 11vw;
+}
+
+.Fopening {
+    float: left;
+    margin-top: -21vw;
+}
+
+.fredensgadeh2 {
+    font-family: 'Avenir LT Std', serif;
+    float: left;
+    margin-left: 5%;
+}
+
+.fredensgadeopeningbck {
+    float: left;
+    margin-left: 5%;
+    top: 0;
+}
+
+.fredensgadeh3{
+    float: left;
+    margin-left: -30%;
+    margin-top: 1.5vw;
+}
+
+.fredensgadeopening {
+    float: left;
+    width: 25%;
+    margin-top: 4vw;
+    margin-left: -31%;
+    line-height: 1.6;
 }
 
 /* BOOKING PAGE STARTS */
