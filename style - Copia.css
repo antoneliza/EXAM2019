@@ -1,12 +1,8 @@
 body {
     font-family: "Roboto Condensed";
-    font-size: 1.1rem;
     margin: 0;
     background-image: url(images/background.png);
-}
 
-p {
-    line-height: 1.4;
 }
 
 .menu {
@@ -74,7 +70,7 @@ nav a {
 .footer {
     background-color: #FFDB4D;
     position: absolute;
-    margin-top: 50vw;
+    margin-top: 10vw;
     width: 100%;
     text-align: center;
     font-family: "Avenir LT Std";
@@ -140,91 +136,6 @@ nav a {
     padding-bottom: 10px;
 }
 
-.icon {
-    width: 16%;
-    margin-left: 42%;
-    margin-top: 12%;
-}
-
-.yellowleft {
-    float: left;
-    width: 22%;
-    background-image: url(images/yellowPolygon.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    margin-top: -3.5%;
-    margin-left: 9.5%;
-}
-
-.yellowlefttext {
-    width: 64%;
-    margin-left: 18%;
-    color: #162D50;
-    text-align: center;
-}
-
-.yellowleftbutton {
-    font-family: 'Avenir LT Std', serif;
-    color: white;
-    font-size: 1rem;
-    padding: 0.7rem;
-    font-weight: 700;
-    background-color: #CE3036;
-    border: none;
-}
-
-.red {
-    float: left;
-    width: 37%;
-    background-image: url(images/redPolygon.png);
-    background-size: cover;
-    margin-top: -11.5%;
-}
-
-.redtext {
-    width: 60%;
-    margin-left: 20%;
-    color: white;
-    text-align: center;
-}
-
-.entryfee{
-    width: 30%;
-}
-
-.redbutton {
-    font-family: 'Avenir LT Std', serif;
-    color: #162D50;
-    font-size: 1.2rem;
-    padding: 0.7rem;
-    font-weight: 700;
-    background-color: #FFDB4D;
-    border: none;
-}
-
-.yellowright {
-    float: right;
-    width: 22%;
-    background-image: url(images/yellowPolygon.png);
-    background-size: cover;
-    margin-right: 9.5%;
-    margin-top: -3.5%;
-}
-
-.yellowrighttext {
-    width: 70%;
-    margin-left: 15%;
-    color: #162D50;
-    text-align: center;
-}
-
-.redline {
-    position: absolute;
-    width: 100%;
-    z-index: -50;
-    margin-top: 6%;
-}
-
 #poligons {
     display: block;
     position: absolute;
@@ -245,8 +156,6 @@ nav a {
     position: absolute;
 }
 
-
-
 #information {
     background-image: url(images/background2.png);
     background-repeat: no-repeat;
@@ -254,105 +163,6 @@ nav a {
     height: 45em;
     position: relative;
     top: 48em;
-}
-
-.openinghours {
-    width: 80%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    color: white;
-    margin-bottom: 15vw;
-}
-
-h3 {
-   font-family: 'Avenir LT Std', serif;
-    font-weight: 100;
-}
-
-.vestergade {
-    width: 50%;
-    float: left;
-}
-
-.Vopening {
-    float: right;
-    margin-top: -21vw;
-}
-
-.vestergadeh2 {
-    font-family: 'Avenir LT Std', serif;
-    float: right;
-    margin-right: 5%;
-}
-
-.vestergadeopeningbck {
-    float: right;
-    margin-right: 5%;
-    top: 0;
-}
-
-.vestergadeh3{
-    float: right;
-    margin-right: -28%;
-    margin-top: 1.5vw;
-}
-
-.vestergadetext {
-    width: 35%;
-    float: left;
-    margin-top: 11vw;
-    text-align: right;
-}
-
-.vestergadeopening {
-    float: right;
-    width: 25%;
-    margin-top: 4vw;
-    margin-right: -31%;
-    line-height: 1.6;
-}
-
-.fredensgade {
-    width: 50%;
-    float: right;
-}
-
-.fredensgadetext {
-    width: 35%;
-    float: right;
-    margin-top: 11vw;
-}
-
-.Fopening {
-    float: left;
-}
-
-.fredensgadeh2 {
-    font-family: 'Avenir LT Std', serif;
-    padding-left: 0;
-    float: left;
-    margin-left: 5%;
-}
-
-.fredensgadeopeningbck {
-    float: left;
-    margin-left: 5%;
-    top: 0;
-}
-
-.fredensgadeh3{
-    float: left;
-    margin-left: 15%;
-    margin-top: 1.5vw;
-}
-
-.fredensgadeopening {
-    float: left;
-    width: 25%;
-    margin-top: 4vw;
-    margin-left: -31%;
-    line-height: 1.6;
 }
 
 /* BOOKING PAGE STARTS */
@@ -470,59 +280,10 @@ input[type=date],
 .food {
     display: flex;
     flex-direction: row;
-     justify-content: center;
+    justify-content: center;
     flex-wrap: wrap;
     align-items: center;
 }
-<<<<<<< Updated upstream
-
-
-
-
-
-
-
-
-
-
-
-h4 {
-    font-family: 'Avenir LT Std', serif;
-    font-size: 1.4rem;
-    padding: 0;
-    color: white;
-}
-
-.events {
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 30vw;
-    margin-bottom: 60vw;
-}
-
-.event01 {
-    width: 50%;
-    float: left;
-}
-
-.event01img {
-    width: 80%;
-    float: left;
-}
-
-.event02 {
-    width: 50%;
-    float: right;
-}
-
-.event02img {
-    width: 80%;
-    float: right;
-}
-=======
->>>>>>> Stashed changes
-
 
 /* GAMES CATALOGUE PAGE STARTS */
 

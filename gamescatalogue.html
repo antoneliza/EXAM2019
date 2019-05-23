@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <title>Games catalogue</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="style%20-%20Copia.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
     <style>
         < !-- @font-face {
@@ -30,10 +30,89 @@
             <a href="#"><img src="images/fb_icon.png"></a>
         </div>
     </section>
-        <img src="images/menuline.png" class="menuline">
-    <section id="information">
-        
-    </section>
+    <img src="images/menuline.png" class="menuline">
+
+    <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search">
+
+    <div id="myBtnContainer">
+        <h2>Filters</h2>
+        <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+        <div style="display: flex;">
+            <h3>Language</h3>
+
+            <button class="btn" onclick="filterSelection('english')"> English</button>
+            <button class="btn" onclick="filterSelection('danish')"> Danish</button>
+        </div>
+        <div style="display: flex;">
+            <h3>Age</h3><br>
+            <button class="btn" onclick="filterSelection('2-9')"> 2-9</button>
+            <button class="btn" onclick="filterSelection('10-15')"> 10-15</button>
+            <button class="btn" onclick="filterSelection('15+')"> 10-15+</button>
+        </div>
+        <div style="display: flex;">
+            <h3>Players</h3><br>
+            <button class="btn" onclick="filterSelection('2')">2</button>
+            <button class="btn" onclick="filterSelection('3-7')"> 3-7</button>
+            <button class="btn" onclick="filterSelection('7+')"> 7+</button>
+        </div>
+        <div style="display: flex; flex-direction: row; flex-wrap: wrap">
+            <h3>Category</h3><br>
+            <button class="btn" onclick="filterSelection('strategy')">Strategy</button>
+            <button class="btn" onclick="filterSelection('fantasy')">Fantasy</button>
+            <button class="btn" onclick="filterSelection('storytelling')">Storytelling</button>
+            <button class="btn" onclick="filterSelection('allignment')">Alignment</button>
+            <button class="btn" onclick="filterSelection('guessing')">Guessing</button>
+            <button class="btn" onclick="filterSelection('tile-based')">Tile-based</button>
+            <button class="btn" onclick="filterSelection('historical')">Historical</button>
+            <button class="btn" onclick="filterSelection('trivia')">Trivia</button>
+            <button class="btn" onclick="filterSelection('economic-simulation')">Economic simulation</button>
+            <button class="btn" onclick="filterSelection('negotiation')">Negotiation</button>
+            <button class="btn" onclick="filterSelection('words')">Words</button>
+            <button class="btn" onclick="filterSelection('educational')">Educational</button>
+            <button class="btn" onclick="filterSelection('race')">Race</button>
+            <button class="btn" onclick="filterSelection('family')">Family</button>
+            <button class="btn" onclick="filterSelection('role-playing')">Role-playing</button>
+        </div>
+    </div>
+
+    <ul id="myUL">
+        <div class="filterDiv danish 10-15 15+ 3-7 family strategy economic-simulation">
+            <li><img src="images/7wonders.png"><br>
+                <h3>7 Wonders</h3>
+                <p>You are the leader of one of the 7 great cities of the Ancient World. Gather resources, develop...</p><a href="#">read more</a>
+            </li>
+        </div>
+        <div class="filterDiv english 2-9 10-15 15+ 3-7 7+ guessing negotiation">
+            <li><img src="images/bang.png"><br>
+                <h3>Bang! The dice games</h3>
+                <p>In the U.S. wild west, the eternal battle between the law and the outlaws keeps heating up...</p><a href="#">read more</a>
+            </li>
+        </div>
+        <div class="filterDiv english 10-15 15+ 2 3-7 strategy">
+            <li><img src="images/forgottenisland.png"><br>
+                <h3>The Forgotten Island</h3>
+                <p>For those shipwrecked on the beach of this forgotten island, a chained boat is the only hope...</p><a href="#">read more</a>
+            </li>
+        </div>
+        <div class="filterDiv english 10-15 15+ 2 3-7 strategy">
+            <li><img src="images/forbiddencastle.png"><br>
+                <h3>The Forbidden Castle</h3>
+                <p>The castle is the highlight of the hike, but hardly have the hikers entered the old walls, when the...</p><a href="#">read more</a>
+            </li>
+        </div>
+        <div class="filterDiv english 10-15 15+ 2 3-7 family">
+            <li><img src="images/kanegawa.png"><br>
+                <h3>Kanagawa</h3>
+                <p>1840: In Kanagawa, the great bay of Tokyo, the Master Hokusai decided to open a painting....</p><a href="#">read more</a>
+            </li>
+        </div>
+        <div class="filterDiv danish 2-9 10-15 15+ 2 3-7 educational">
+            <li><img src="images/cortex.png"><br>
+                <h3>Cortex</h3>
+                <p>Cortex Challenge is the exciting new brain-busting card game by Esdevium Games, which uses...</p><a href="#">read more</a>
+            </li>
+        </div>
+    </ul>
 
     <footer class="footer">
         <br>
@@ -48,6 +127,76 @@
         <a href="#" class="footericons"><img src="images/fb_icon.png"></a>
     </footer>
 
+    <script>
+        function myFunction() {
+            // Declare variables
+            var input, filter, ul, li, h3, a, i, txtValue;
+            input = document.getElementById('myInput');
+            filter = input.value.toUpperCase();
+            ul = document.getElementById("myUL");
+            li = ul.getElementsByTagName('li');
+
+            // Loop through all list items, and hide those who don't match the search query
+            for (i = 0; i < li.length; i++) {
+                a = li[i].getElementsByTagName("h3")[0];
+                txtValue = a.textContent || a.innerText;
+                if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                    li[i].style.display = "";
+                } else {
+                    li[i].style.display = "none";
+                }
+            }
+        }
+
+        filterSelection("all")
+
+        function filterSelection(c) {
+            var x, i;
+            x = document.getElementsByClassName("filterDiv");
+            if (c == "all") c = "";
+            // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
+            for (i = 0; i < x.length; i++) {
+                w3RemoveClass(x[i], "show");
+                if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+            }
+        }
+
+        // Show filtered elements
+        function w3AddClass(element, name) {
+            var i, arr1, arr2;
+            arr1 = element.className.split(" ");
+            arr2 = name.split(" ");
+            for (i = 0; i < arr2.length; i++) {
+                if (arr1.indexOf(arr2[i]) == -1) {
+                    element.className += " " + arr2[i];
+                }
+            }
+        }
+
+        // Hide elements that are not selected
+        function w3RemoveClass(element, name) {
+            var i, arr1, arr2;
+            arr1 = element.className.split(" ");
+            arr2 = name.split(" ");
+            for (i = 0; i < arr2.length; i++) {
+                while (arr1.indexOf(arr2[i]) > -1) {
+                    arr1.splice(arr1.indexOf(arr2[i]), 1);
+                }
+            }
+            element.className = arr1.join(" ");
+        }
+
+        // Add active class to the current control button (highlight it)
+        var btnContainer = document.getElementById("myBtnContainer");
+        var btns = btnContainer.getElementsByClassName("btn");
+        for (var i = 0; i < btns.length; i++) {
+            btns[i].addEventListener("click", function() {
+                var current = document.getElementsByClassName("active");
+                current[0].className = current[0].className.replace(" active", "");
+                this.className += " active";
+            });
+        }
+    </script>
 </body>
 
 </html>
