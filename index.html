@@ -7,6 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700&display=swap" rel="stylesheet">
+    
+    //Code by Michalsnik
+    (https://michalsnik.github.io/aos/)
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    //
+    
     <style>
         < !-- @font-face {
             font-family: Avenir LT Std;
@@ -44,13 +51,13 @@
             <br>
                 Choose a drink or a snack from wide range of products and enjoy it while playing!
             <br><br><br><br>
-            <a href="snacks&drinks.html">
+            <a href="snacks&drinks.html" style="text-decoration: none;">
                 <button class="yellowleftbutton">Check menu</button>
             </a>
             <br><br><br>
             </p>
         </div>
-
+        
         <div class="red">
             <img src="images/cafe_icon.png" class="icon">
             <p class="redtext">The board game café is a cozy place where you can meet up with your friends and do something as social and fun as playing board games.
@@ -60,14 +67,12 @@
             <br><br>
             <img src="images/entryfee.png" class="entryfee">
             <br><br>
-            <a href="booking.html">
+            <a href="booking.html" style="text-decoration: none;">
                 <button class="redbutton">Book a table</button>
             </a>
             <br><br><br><br><br>
-            </p>
-            
+            </p>    
         </div>
-
         <div class="yellowright">
             <img src="images/cards.png" class="icon">
             <p class="yellowrighttext">
@@ -76,7 +81,7 @@
                 <br>
                 So come, choose and play!
             <br><br><br><br>
-            <a href="gamescatalogue.html">
+            <a href="gamescatalogue.html" style="text-decoration: none;">
                 <button class="yellowleftbutton">Check games</button>
             </a>
             <br><br><br>
@@ -85,101 +90,53 @@
     
     </section>
     
+    <br>
+    
     <section class="events">
+        <div data-aos="fade-right">
         <div class="event01">
-            <h4>Open Board Game Group</h4>
-            <img src="/images/events.png" class="event01img">
+            <h2 style="padding: 0">Open Board Game Group</h2>
+            <img src="/images/event01.jpg" class="event01img">
+            <a href="">
+                <button class="attendevent01"><strong>f</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Attend</button>
+            </a>
         </div>
+        </div>
+        <div data-aos="fade-left">
         <div class="event02">
-            <h4 style="text-align: right;">Game of Throne Night</h4>
-            <img src="/images/events.png" class="event02img">
+            <h2 style="text-align: right; padding: 0">Game of Throne Night</h2>
+            <img src="/images/event02.png" class="event02img">
+            <a href="">
+                <button class="attendevent02"><strong>f</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Attend</button>
+            </a>
+        </div>
         </div>
     </section>
+    <br>
     
     
-    
-    <section class="openinghours">
-            <div class="vestergade">
-                <p class="vestergadetext">The café in Vestergade is in the cozy street, in the middle of town. Here the couches are soft and the vibe is chilled. Perfect for dates, a rainy day or a great start for a night on the town.
-                </p>
-                <div class="Vopening">
-                    <h2 class="vestergadeh2">Vestergade 58A</h2>
-                       <img src="images/opening_hours.png" class="vestergadeopeningbck">
-                       <h3 class="vestergadeh3">Opening hours</h3>
-                        <table class="vestergadeopening">
-                            <tr>
-                                <td>Monday</td>
-                                <td style="font-weight: 100;">14-23</td>
-                            </tr>
-                            <tr>
-                                <td>Tuesday</td>
-                                <td style="font-weight: 100;">14-23</td>
-                            </tr>
-                            <br>
-                            <tr>
-                                <td>Wednesday</td>
-                                <td style="font-weight: 100;">14-23</td>
-                            </tr>
-                            <tr>
-                                <td>Thursday</td>
-                                <td style="font-weight: 100;">14-23</td>
-                            </tr>
-                            <tr>
-                                <td>Friday</td>
-                                <td style="font-weight: 100;">14-01</td>
-                            </tr>
-                            <tr>
-                                <td>Saturday</td>
-                                <td style="font-weight: 100;">14-01</td>
-                            </tr>
-                            <tr>
-                                <td>Monday</td>
-                                <td style="font-weight: 100;">14-22</td>
-                            </tr>
-                        </table>
-                </div>       
-            </div>
-            <div class="fredensgade">
-                <p class="fredensgadetext">The café in Fredensgade has more space, better time and aside from all the games you already know this is also where all the more advanced games are found.</p>
-                <div class="Fopening">
-                    <h2 class="fredensgadeh2">Fredensgade 38</h2>
-                      <br>
-                       <img src="images/opening_hours.png" class="fredensgadeopeningbck">
-                       <h3 class="fredensgadeh3">Opening hours</h3>
-                        <table class="fredensgadeopening">
-                            <tr>
-                                <td>Monday</td>
-                                <td style="font-weight: 100;">14-23</td>
-                            </tr>
-                            <tr>
-                                <td>Tuesday</td>
-                                <td style="font-weight: 100;">14-23</td>
-                            </tr>
-                            <br>
-                            <tr>
-                                <td>Wednesday</td>
-                                <td style="font-weight: 100;">14-23</td>
-                            </tr>
-                            <tr>
-                                <td>Thursday</td>
-                                <td style="font-weight: 100;">14-23</td>
-                            </tr>
-                            <tr>
-                                <td>Friday</td>
-                                <td style="font-weight: 100;">14-01</td>
-                            </tr>
-                            <tr>
-                                <td>Saturday</td>
-                                <td style="font-weight: 100;">14-01</td>
-                            </tr>
-                            <tr>
-                                <td>Monday</td>
-                                <td style="font-weight: 100;">14-22</td>
-                            </tr>
-                        </table>    
-                </div>
-            </div>
-    </section>
+    <div class="openinghours">
+        <div data-aos="fade-up"> 
+        <div class="vestergade">
+            <h2 class="Vopeningheading">Vestergade 58A</h2>
+            <div class="vestergadetext">
+                <br><br><br><br><br><br><br><br>
+                <p>The café in Vestergade is in the cozy street, in the middle of town. Here the couches are soft and the vibe is chilled. Perfect for dates, a rainy day or a great start for a night on the town.</p>    
+            </div> 
+            <img src="images/vestergade_opening.png" class="vestergadeopening">    
+        </div>
+        </div>
+        <div data-aos="fade-up"> 
+        <div class="fredensgade">
+            <h2 class="Fopeningheading">Fredensgade 38</h2>
+            <div class="fredensgadetext">
+                <br><br><br><br><br><br><br><br>
+                <p>The café in Fredensgade has more space, better time and aside from all the games you already know this is also where all the more advanced games are found.</p>
+            </div>  
+            <img src="images/fredesgade_opening.png" class="fredensgadeopening">  
+        </div>
+        </div>
+    </div>
 
     <footer class="footer">
         <br>
@@ -194,8 +151,10 @@
         <a href="#" class="footericons"><img src="images/insta_icon.png"></a>
         <a href="#" class="footericons"><img src="images/fb_icon.png"></a>
     </footer>
-
-
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js">AOS.init();</script>
+<script>
+  AOS.init();
+</script>
 </body>
 
 </html>
