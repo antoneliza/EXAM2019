@@ -164,7 +164,7 @@
         transform: rotate(-135deg);
         margin-top: -9px;
     }
-    
+
     #sidebarMenu li img {
         margin: 5px;
     }
@@ -181,7 +181,55 @@
         display: block;
         text-align: center;
     }
+
+
+    .footer {
+        position: relative;
+        background-color: #FFDB4D;
+        position: absolute;
+        width: 100%;
+        text-align: center;
+        font-family: "Avenir LT Std";
+        color: #11233E;
+        z-index: 3;
+    }
+
+    .footer a {
+        color: #11233E;
+        padding-left: 20px;
+        padding-right: 20px;
+        position: relative;
+    }
+
+    .footer p {
+        font-size: 20px;
+    }
+
+    .footericons {
+        padding: 0;
+    }
+
+    .footer img {
+        padding-bottom: 10px;
+    }
     
+    /* HOMEPAGE MOBILE STARTS */
+    
+    #mobilecontent #homelanding {
+        position: relative;
+        width: 100%;
+        height: 50%;
+    }
+    
+    #mobilecontent .red {
+        width: 60%;
+        position: relative;
+        top: auto;
+    }
+    
+    
+
+
     /* BOOKING MOBILE PAGE STARTS*/
 
     #mobilecontent #conditions {
@@ -215,11 +263,11 @@
         width: 90%;
         position: relative;
         top: 0;
-        
+
     }
-    
+
     #mobilecontent #booking {
-        top:0;
+        top: 0;
         margin-top: 5%;
     }
 
@@ -245,49 +293,106 @@
         font-size: 20px;
         color: white;
     }
-    
-    
 
-    .footer {
-        position: relative;
-        background-color: #FFDB4D;
-        position: absolute;
-        width: 100%;
-        text-align: center;
-        font-family: "Avenir LT Std";
-        color: #11233E;
-        z-index: 3;
-    }
 
-    .footer a {
-        color: #11233E;
-        padding-left: 20px;
-        padding-right: 20px;
-        position: relative;
-    }
+    /* SNACKS AND DRINKS MOBILE PAGE STARTS */
 
-    .footer p {
-        font-size: 20px;
-    }
-
-    .footericons {
-        padding: 0;
-    }
-
-    .footer img {
-        padding-bottom: 10px;
-    }
-
-    #myUL {
+    #desktopfood {
         display: none;
     }
 
+    #mobilecontent #mobilefood {
+        display: contents;
+        z-index: 1000;
+        position: relative;
+    }
+
+    #mobilecontent #mobilefood img {
+        width: 90%;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        margin-top: 20px;
+    }
+
+    /* GAMES CATALOGUE MOBILE PAGE STARTS */
+
+    #mobilecontent input[type=text] {
+        width: 80%;
+        margin-left: 6%;
+        margin-top: 4%;
+        position: relative
+    }
+
+    #mobilecontent #myBtnContainer {
+        position: relative;
+        top: auto;
+        margin-top: 3%;
+        width: 80%;
+        margin-left: 6%;
+        font-family: Roboto Condensed;
+        padding: 15px;
+    }
+
+    #mobilecontent #myBtnContainer h2 {
+        font-size: 20px;
+    }
+
+    #mobilecontent #myUL {
+        padding: 0;
+        width: 100%;
+        z-index: 2000;
+        position: relative;
+        text-align: justify;
+    }
+
+    #mobilecontent #myUL img {
+        width: 100%;
+        position: relative;
+        margin-left: 0;
+    }
+
+    #mobilecontent #myUL li {
+        width: 100%;
+        position: relative;
+        margin-left: 0;
+        padding-right: 20px;
+        display: inline-block;
+    }
+
+    #mobilecontent #myUL p {
+        position: relative;
+        margin-left: 0;
+        font-size: ;
+        width: 100%;
+        font-family: Avenir LT Std;
+    }
+
+    #mobilecontent #myUL h3 {
+        font-size: 15px;
+        margin: 0;
+        padding-bottom: 10px;
+        text-align: center;
+    }
+
+    #mobilecontent #myUL a {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
 
 
+    #mobilecontent #myUL h3 {
+        font-family: Avenir LT Std;
+    }
 
-
-
-
+    #mobilecontent .show {
+        display: inline-block;
+        width: 40%;
+        position: relative;
+    }
 
 
 
@@ -868,6 +973,10 @@ input[type=date],
 
 /* SNACKS & DRINKS PAGE STARTS */
 
+#mobilefood {
+    display: none;
+}
+
 .foodpic {
     width: 30%;
     height: 30%;
@@ -930,9 +1039,8 @@ h3 {
 }
 
 #myUL li {
-    width: 40vh;
-    min-width: 40vh;
-    margin: 20px;
+    width: 100%;
+    margin: 10%;
 }
 
 #myUL li a {
@@ -956,6 +1064,8 @@ h3 {
 
 .show {
     display: block;
+    width: 30%;
+    position: relative;
 }
 
 #myBtnContainer {
@@ -976,6 +1086,11 @@ h3 {
 
 #myBtnContainer h3 {
     margin-right: 17px;
+}
+
+#myUL p {
+    width: 66%;
+    margin-left: 17%;
 }
 
 .btn {

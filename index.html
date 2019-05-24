@@ -7,13 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700&display=swap" rel="stylesheet">
-    
+
     <!-- Code by Michalsnik
     (https://michalsnik.github.io/aos/) -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    
-    
+
+
     <style>
         < !-- @font-face {
             font-family: Avenir LT Std;
@@ -24,137 +24,161 @@
 </head>
 
 <body>
-    <section class="menu">
-        <nav>
+    <div id="mobilecontent">
+        <div id="mobilemenu">
+            <div class="header"><img src="images/logo.png" style="width:75px; margin-left: auto; margin-right: auto; display: block"></div>
+            <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu">
+            <label for="openSidebarMenu" class="sidebarIconToggle">
+                <div class="spinner diagonal part-1"></div>
+                <div class="spinner horizontal"></div>
+                <div class="spinner diagonal part-2"></div>
+            </label>
+            <div id="sidebarMenu">
+                <ul class="sidebarMenuInner">
+                    <li><a href="booking.html">Booking</a></li>
+                    <li><a href="snacks&drinks.html">Snacks & Drinks</a></li>
+                    <li><a href="gamescatalogue.html">Games catalogue</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="#"><img src="images/insta_icon.png"></a><a href="#"><img src="images/fb_icon.png"></a></li>
+                </ul>
+            </div>
+        </div>
+        <section class="menu">
+            <nav>
+                <a href="booking.html">Booking</a>
+                <a href="snacks&drinks.html">Snacks & Drinks</a>
+                <a href="index.html"><img src="images/logo.png" style="width: 7em; height: 6em; z-index: 100"></a>
+                <a href="gamescatalogue.html">Games catalogue</a>
+                <a href="shop.html">Shop</a>
+            </nav>
+            <div id="SoMeicons">
+                <a href="#"><img src="images/insta_icon.png"></a>
+                <a href="#"><img src="images/fb_icon.png"></a>
+            </div>
+        </section>
+        <img src="images/menuline.png" class="menuline">
+        <section class="landing" id="homelanding">
+        </section>
+
+        <section class="basicinfo">
+
+            <img src="images/redline.png" class="redline">
+
+            <div class="yellowleft">
+                <img src="images/popcorn.png" class="icon">
+                <p class="yellowlefttext">
+                    <br>
+                    Choose a drink or a snack from wide range of products and enjoy it while playing!
+                    <br><br><br><br>
+                    <a href="snacks&drinks.html" style="text-decoration: none;">
+                        <button class="yellowleftbutton">Check menu</button>
+                    </a>
+                    <br><br><br>
+                </p>
+            </div>
+
+            <div class="red">
+                <img src="images/cafe_icon.png" class="icon">
+                <p class="redtext">The board game café is a cozy place where you can meet up with your friends and do something as social and fun as playing board games.
+                    <br>
+                    <br>
+                    You can explore huge variety of board games for as long as you´re here for only
+                    <br><br>
+                    <img src="images/entryfee.png" class="entryfee">
+                    <br><br>
+                    <a href="booking.html" style="text-decoration: none;">
+                        <button class="redbutton">Book a table</button>
+                    </a>
+                    <br><br><br><br><br>
+                </p>
+            </div>
+            <div class="yellowright">
+                <img src="images/cards.png" class="icon">
+                <p class="yellowrighttext">
+                    <br>
+                    Together in both cafés we have over 750 games!
+                    <br>
+                    So come, choose and play!
+                    <br><br><br><br>
+                    <a href="gamescatalogue.html" style="text-decoration: none;">
+                        <button class="yellowleftbutton">Check games</button>
+                    </a>
+                    <br><br><br>
+                </p>
+            </div>
+
+        </section>
+
+        <br>
+
+        <section class="events">
+            <div data-aos="fade-right">
+                <div class="event01">
+                    <h2 style="padding: 0">Open Board Game Group</h2>
+                    <img src="images/event01.jpg" class="event01img">
+                    <a href="">
+                        <button class="attendevent01"><strong>f</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Attend</button>
+                    </a>
+                </div>
+            </div>
+            <div data-aos="fade-left">
+                <div class="event02">
+                    <h2 style="text-align: right; padding: 0">Game of Throne Night</h2>
+                    <img src="images/event02.png" class="event02img">
+                    <a href="">
+                        <button class="attendevent02"><strong>f</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Attend</button>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <br>
+
+
+        <div class="openinghours">
+            <div data-aos="fade-up">
+                <div class="vestergade">
+                    <h2 class="Vopeningheading">Vestergade 58A</h2>
+                    <div class="vestergadetext">
+                        <br><br><br><br><br><br><br><br>
+                        <p>The café in Vestergade is in the cozy street, in the middle of town. Here the couches are soft and the vibe is chilled. Perfect for dates, a rainy day or a great start for a night on the town.</p>
+                    </div>
+                    <img src="images/vestergade_opening.png" class="vestergadeopening">
+                </div>
+            </div>
+            <div data-aos="fade-up">
+                <div class="fredensgade">
+                    <h2 class="Fopeningheading">Fredensgade 38</h2>
+                    <div class="fredensgadetext">
+                        <br><br><br><br><br><br><br><br>
+                        <p>The café in Fredensgade has more space, better time and aside from all the games you already know this is also where all the more advanced games are found.</p>
+                    </div>
+                    <img src="images/fredesgade_opening.png" class="fredensgadeopening">
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <br>
             <a href="booking.html">Booking</a>
             <a href="snacks&drinks.html">Snacks & Drinks</a>
-            <a href="index.html"><img src="images/logo.png" style="width: 7em; height: 6em; z-index: 100"></a>
             <a href="gamescatalogue.html">Games catalogue</a>
             <a href="shop.html">Shop</a>
-        </nav>
-        <div id="SoMeicons">
-            <a href="#"><img src="images/insta_icon.png"></a>
-            <a href="#"><img src="images/fb_icon.png"></a>
-        </div>
-    </section>
-        <img src="images/menuline.png" class="menuline">
-    <section class="landing" id="homelanding">
-    </section>
-    
-    <section class="basicinfo">
-        
-        <img src="images/redline.png" class="redline">
 
-        <div class="yellowleft">
-            <img src="images/popcorn.png" class="icon">
-            <p class="yellowlefttext">
-            <br>
-                Choose a drink or a snack from wide range of products and enjoy it while playing!
-            <br><br><br><br>
-            <a href="snacks&drinks.html" style="text-decoration: none;">
-                <button class="yellowleftbutton">Check menu</button>
-            </a>
-            <br><br><br>
-            </p>
-        </div>
-        
-        <div class="red">
-            <img src="images/cafe_icon.png" class="icon">
-            <p class="redtext">The board game café is a cozy place where you can meet up with your friends and do something as social and fun as playing board games.
-            <br>
-            <br>
-            You can explore huge variety of board games for as long as you´re here for only
-            <br><br>
-            <img src="images/entryfee.png" class="entryfee">
-            <br><br>
-            <a href="booking.html" style="text-decoration: none;">
-                <button class="redbutton">Book a table</button>
-            </a>
-            <br><br><br><br><br>
-            </p>    
-        </div>
-        <div class="yellowright">
-            <img src="images/cards.png" class="icon">
-            <p class="yellowrighttext">
-            <br>
-                Together in both cafés we have over 750 games! 
-                <br>
-                So come, choose and play!
-            <br><br><br><br>
-            <a href="gamescatalogue.html" style="text-decoration: none;">
-                <button class="yellowleftbutton">Check games</button>
-            </a>
-            <br><br><br>
-            </p>
-        </div>
-    
-    </section>
-    
-    <br>
-    
-    <section class="events">
-        <div data-aos="fade-right">
-        <div class="event01">
-            <h2 style="padding: 0">Open Board Game Group</h2>
-            <img src="images/event01.jpg" class="event01img">
-            <a href="">
-                <button class="attendevent01"><strong>f</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Attend</button>
-            </a>
-        </div>
-        </div>
-        <div data-aos="fade-left">
-        <div class="event02">
-            <h2 style="text-align: right; padding: 0">Game of Throne Night</h2>
-            <img src="images/event02.png" class="event02img">
-            <a href="">
-                <button class="attendevent02"><strong>f</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Attend</button>
-            </a>
-        </div>
-        </div>
-    </section>
-    <br>
-    
-    
-    <div class="openinghours">
-        <div data-aos="fade-up"> 
-        <div class="vestergade">
-            <h2 class="Vopeningheading">Vestergade 58A</h2>
-            <div class="vestergadetext">
-                <br><br><br><br><br><br><br><br>
-                <p>The café in Vestergade is in the cozy street, in the middle of town. Here the couches are soft and the vibe is chilled. Perfect for dates, a rainy day or a great start for a night on the town.</p>    
-            </div> 
-            <img src="images/vestergade_opening.png" class="vestergadeopening">    
-        </div>
-        </div>
-        <div data-aos="fade-up"> 
-        <div class="fredensgade">
-            <h2 class="Fopeningheading">Fredensgade 38</h2>
-            <div class="fredensgadetext">
-                <br><br><br><br><br><br><br><br>
-                <p>The café in Fredensgade has more space, better time and aside from all the games you already know this is also where all the more advanced games are found.</p>
-            </div>  
-            <img src="images/fredesgade_opening.png" class="fredensgadeopening">  
-        </div>
-        </div>
+
+            <p>mail@aarhusbraetspilscafe.dk</p>
+
+            <a href="#" class="footericons"><img src="images/insta_icon.png"></a>
+            <a href="#" class="footericons"><img src="images/fb_icon.png"></a>
+        </footer>
     </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js">
+        AOS.init();
 
-    <footer class="footer">
-        <br>
-        <a href="booking.html">Booking</a>
-        <a href="snacks&drinks.html">Snacks & Drinks</a>
-        <a href="gamescatalogue.html">Games catalogue</a>
-        <a href="shop.html">Shop</a>
-        
+    </script>
+    <script>
+        AOS.init();
 
-        <p>mail@aarhusbraetspilscafe.dk</p>
-
-        <a href="#" class="footericons"><img src="images/insta_icon.png"></a>
-        <a href="#" class="footericons"><img src="images/fb_icon.png"></a>
-    </footer>
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js">AOS.init();</script>
-<script>
-  AOS.init();
-</script>
+    </script>
 </body>
 
 </html>
