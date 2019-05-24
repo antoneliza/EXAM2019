@@ -32,7 +32,7 @@
     }
 
     #bookinginformation {
-        z-index: -1;
+        z-index: 1;
     }
 
     .header {
@@ -41,7 +41,7 @@
         box-shadow: none;
         height: 60px !important;
         overflow: hidden;
-        z-index: 10;
+        z-index: 2;
         background-color: #162D50;
     }
 
@@ -55,6 +55,7 @@
         font-family: Avenir LT Std;
         background: rgb(42, 92, 166);
         background: linear-gradient(0deg, rgba(42, 92, 166, 1) 0%, rgba(22, 45, 80, 1) 100%);
+        z-index: 2;
 
     }
 
@@ -71,7 +72,7 @@
         font-weight: bold;
         padding: 20px;
         cursor: pointer;
-        
+
     }
 
     .sidebarMenuInner li span {
@@ -88,11 +89,11 @@
         text-decoration: none;
     }
 
-    input[type="checkbox"]:checked ~ #sidebarMenu {
+    #mobilemenu input[type="checkbox"]:checked ~ #sidebarMenu {
         transform: translateX(0);
     }
 
-    input[type=checkbox] {
+    #mobilemenu input[type=checkbox] {
         transition: all 0.3s;
         box-sizing: border-box;
         display: none;
@@ -144,26 +145,30 @@
         margin-top: 3px;
     }
 
-    input[type=checkbox]:checked ~ .sidebarIconToggle > .horizontal {
+    #mobilemenu input[type=checkbox]:checked ~ .sidebarIconToggle > .horizontal {
         transition: all 0.3s;
         box-sizing: border-box;
         opacity: 0;
     }
 
-    input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-1 {
+    #mobilemenu input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-1 {
         transition: all 0.3s;
         box-sizing: border-box;
         transform: rotate(135deg);
         margin-top: 8px;
     }
 
-    input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
+    #mobilemenu input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
         transition: all 0.3s;
         box-sizing: border-box;
         transform: rotate(-135deg);
         margin-top: -9px;
     }
     
+    #sidebarMenu li img {
+        margin: 5px;
+    }
+
     #mobilecontent h2 {
         font-family: Avenir LT Std;
         text-transform: uppercase;
@@ -177,6 +182,8 @@
         text-align: center;
     }
     
+    /* BOOKING MOBILE PAGE STARTS*/
+
     #mobilecontent #conditions {
         padding: 0;
         font-family: Roboto condensed;
@@ -185,8 +192,9 @@
         margin-top: 15px;
         margin-left: auto;
         margin-right: auto;
+        position: relative;
     }
-    
+
     #mobilecontent #conditions p {
         width: 100%;
         display: inline-block;
@@ -195,9 +203,9 @@
         margin-bottom: 10px;
         padding-left: 15px;
         padding-right: 15px;
-        
+
     }
-    
+
     #mobilecontent #bookinginformation {
         display: block;
         margin-left: auto;
@@ -205,21 +213,50 @@
         margin-left: 5%;
         padding: 0;
         width: 90%;
-        top: 53%;
+        position: relative;
+        top: 0;
+        
     }
     
-    #mobilecontent input[type=checkbox] {
+    #mobilecontent #booking {
+        top:0;
+        margin-top: 5%;
     }
 
+    #mobilecontent #bookinginformation input[type=checkbox] {
+        width: 20px;
+        height: 20px;
+        max-width: 20px;
+        max-height: 20px;
+        padding: 5px;
+        margin-bottom: 0;
+        -webkit-appearance: none;
+        border: 1px solid #CE3036;
+    }
+
+    input[type=checkbox]:checked {
+        padding: 0px 5px 5px 5px;
+    }
+
+    input[type=checkbox]:checked:after {
+        content: 'x';
+        align-content: center;
+        vertical-align: middle;
+        font-size: 20px;
+        color: white;
+    }
+    
+    
+
     .footer {
-        display: none;
+        position: relative;
         background-color: #FFDB4D;
         position: absolute;
         width: 100%;
         text-align: center;
         font-family: "Avenir LT Std";
         color: #11233E;
-        z-index: -1;
+        z-index: 3;
     }
 
     .footer a {
@@ -240,21 +277,21 @@
     .footer img {
         padding-bottom: 10px;
     }
-    
+
     #myUL {
         display: none;
     }
 
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+
+
+
+
+
+
+
+
+
+
 
 }
 
@@ -302,7 +339,7 @@
         color: white;
         transition-duration: 0.8s;
     }
-    
+
     nav a:hover {
         color: #CE3036;
     }
@@ -361,6 +398,7 @@
     }
 
 }
+
 /* HOMEPAGE STARTS */
 
 #homelanding {
@@ -452,15 +490,27 @@
 
 .red {
     /* -webkit-animation: mover 1s infinite  alternate; */
-    animation: mover 2s infinite  alternate;
+    animation: mover 2s infinite alternate;
 }
+
 @-webkit-keyframes mover {
-    0% { transform: translateY(0); }
-    100% { transform: translateY(-20px); }
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-20px);
+    }
 }
+
 @keyframes mover {
-    0% { transform: translateY(0); }
-    100% { transform: translateY(-20px); }
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-20px);
+    }
 }
 
 .redtext {
@@ -470,7 +520,7 @@
     text-align: center;
 }
 
-.entryfee{
+.entryfee {
     width: 30%;
 }
 
@@ -636,7 +686,7 @@ h4 {
 }
 
 h5 {
-   font-family: 'Avenir LT Std', serif;
+    font-family: 'Avenir LT Std', serif;
     font-weight: 100;
 }
 
@@ -691,7 +741,7 @@ h5 {
 .fredensgadeopening {
     width: 40%;
     margin-left: 5%;
-    float: left; 
+    float: left;
 }
 
 /* BOOKING PAGE STARTS */
@@ -753,8 +803,26 @@ form {
 }
 
 input[type=checkbox] {
-    padding: 10px;
-    margin: 10px;
+    width: 20px;
+    height: 20px;
+    max-width: 20px;
+    max-height: 20px;
+    padding: 5px;
+    margin-bottom: 0;
+    -webkit-appearance: none;
+    border: 1px solid #CE3036;
+}
+
+input[type=checkbox]:checked {
+    padding: 0px 5px 5px 5px;
+}
+
+input[type=checkbox]:checked:after {
+    content: 'x';
+    align-content: center;
+    vertical-align: middle;
+    font-size: 20px;
+    color: white;
 }
 
 #bookinginformation input[type=text] {
@@ -813,7 +881,7 @@ input[type=date],
 .food {
     display: flex;
     flex-direction: row;
-     justify-content: center;
+    justify-content: center;
     flex-wrap: wrap;
     align-items: center;
 }
@@ -879,15 +947,15 @@ h3 {
 #myUL li a:hover {
     background-color: white;
     color: #DB353B;
-    
+
 }
 
 .filterDiv {
-  display: none;
+    display: none;
 }
 
 .show {
-  display: block;
+    display: block;
 }
 
 #myBtnContainer {
@@ -901,7 +969,7 @@ h3 {
     padding: 20px;
 }
 
-#myBtnContainer h2{
+#myBtnContainer h2 {
     padding: 0;
     margin: 0;
 }
@@ -921,12 +989,12 @@ h3 {
     font-family: Roboto Condensed;
     font-size: 15px;
     cursor: pointer;
-    
+
 }
 
 /* Add a light grey background on mouse-over */
 .btn:hover {
-  background-color: white;
+    background-color: white;
     color: #DB353B;
 }
 
@@ -937,7 +1005,7 @@ h3 {
 
 /* Add a dark background to the active button */
 .btn.active {
-  margin-bottom: 20px;
+    margin-bottom: 20px;
     background-color: rgba(255, 255, 255, 0);
     border: none;
     border-bottom: 1px solid white;
@@ -949,13 +1017,25 @@ h3 {
 
 .red {
     /* -webkit-animation: mover 1s infinite  alternate; */
-    animation: mover 2s infinite  alternate;
+    animation: mover 2s infinite alternate;
 }
+
 @-webkit-keyframes mover {
-    0% { transform: translateY(0); }
-    100% { transform: translateY(-20px); }
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-20px);
+    }
 }
+
 @keyframes mover {
-    0% { transform: translateY(0); }
-    100% { transform: translateY(-20px); }
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-20px);
+    }
 }
