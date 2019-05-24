@@ -1,106 +1,351 @@
-body {
-    font-family: "Roboto Condensed";
-    font-size: 1.1rem;
-    margin: 0;
-    background-image: url(images/background.png);
+@media only screen and (max-width: 449px) {
+    .menu {
+        display: none;
+    }
+
+    /* code by Jelena Jovanovic (https://codepen.io/plavookac/pen/qomrMw)*/
+
+    @import url('https://fonts.googleapis.com/css?family=Varela+Round');
+
+    html,
+    body {
+        overflow-x: hidden;
+        height: 100%;
+
+    }
+
+    body {
+        background-image: url(mobilebackground.png);
+        padding: 0;
+        margin: 0;
+    }
+
+    .menuline {
+        display: none;
+    }
+
+    .menu {
+        z-index: 100;
+    }
+
+    #conditions {
+        z-index: -1;
+    }
+
+    #bookinginformation {
+        z-index: -1;
+    }
+
+    .header {
+        width: 100%;
+        max-width: 100%;
+        box-shadow: none;
+        height: 60px !important;
+        overflow: hidden;
+        z-index: 10;
+        background-color: #162D50;
+    }
+
+    #sidebarMenu {
+        height: 100%;
+        position: fixed;
+        left: 0;
+        width: 100%;
+        transform: translateX(-100%);
+        transition: transform 300ms ease-in-out;
+        font-family: Avenir LT Std;
+        background: rgb(42, 92, 166);
+        background: linear-gradient(0deg, rgba(42, 92, 166, 1) 0%, rgba(22, 45, 80, 1) 100%);
+
+    }
+
+    .sidebarMenuInner {
+        margin-top: 30%;
+        padding: 0;
+    }
+
+    .sidebarMenuInner li {
+        list-style: none;
+        text-align: center;
+        color: white;
+        text-transform: uppercase;
+        font-weight: bold;
+        padding: 20px;
+        cursor: pointer;
+        
+    }
+
+    .sidebarMenuInner li span {
+        display: block;
+        font-size: 14px;
+        color: rgba(255, 255, 255, 0.50);
+    }
+
+    .sidebarMenuInner li a {
+        color: #fff;
+        text-transform: uppercase;
+        font-weight: bold;
+        cursor: pointer;
+        text-decoration: none;
+    }
+
+    input[type="checkbox"]:checked ~ #sidebarMenu {
+        transform: translateX(0);
+    }
+
+    input[type=checkbox] {
+        transition: all 0.3s;
+        box-sizing: border-box;
+        display: none;
+    }
+
+    .sidebarIconToggle {
+        transition: all 0.3s;
+        box-sizing: border-box;
+        cursor: pointer;
+        position: absolute;
+        z-index: 99;
+        height: 100%;
+        width: 100%;
+        top: 22px;
+        right: 15px;
+        height: 22px;
+        width: 22px;
+    }
+
+    .spinner {
+        transition: all 0.3s;
+        box-sizing: border-box;
+        position: absolute;
+        height: 3px;
+        width: 100%;
+        background-color: #fff;
+    }
+
+    .horizontal {
+        transition: all 0.3s;
+        box-sizing: border-box;
+        position: relative;
+        float: left;
+        margin-top: 3px;
+    }
+
+    .diagonal.part-1 {
+        position: relative;
+        transition: all 0.3s;
+        box-sizing: border-box;
+        float: left;
+    }
+
+    .diagonal.part-2 {
+        transition: all 0.3s;
+        box-sizing: border-box;
+        position: relative;
+        float: left;
+        margin-top: 3px;
+    }
+
+    input[type=checkbox]:checked ~ .sidebarIconToggle > .horizontal {
+        transition: all 0.3s;
+        box-sizing: border-box;
+        opacity: 0;
+    }
+
+    input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-1 {
+        transition: all 0.3s;
+        box-sizing: border-box;
+        transform: rotate(135deg);
+        margin-top: 8px;
+    }
+
+    input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
+        transition: all 0.3s;
+        box-sizing: border-box;
+        transform: rotate(-135deg);
+        margin-top: -9px;
+    }
+    
+    #mobilecontent h2 {
+        font-family: Avenir LT Std;
+        text-transform: uppercase;
+        font-size: 18px;
+        margin: 0;
+        margin-top: 10px;
+        padding: 0;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        text-align: center;
+    }
+    
+    #mobilecontent #conditions {
+        padding: 0;
+        font-family: Roboto condensed;
+        font-size: 13px;
+        width: 100%;
+        margin-top: 15px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    #mobilecontent #conditions p {
+        width: 100%;
+        display: inline-block;
+        margin: 0;
+        padding: 0;
+        margin-bottom: 10px;
+        padding-left: 15px;
+        padding-right: 15px;
+        
+    }
+    
+    #mobilecontent #bookinginformation {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-left: 5%;
+        padding: 0;
+        width: 90%;
+        top: 53%;
+    }
+    
+    #mobilecontent input[type=checkbox] {
+    }
+
+    .footer {
+        display: none;
+        background-color: #FFDB4D;
+        position: absolute;
+        width: 100%;
+        text-align: center;
+        font-family: "Avenir LT Std";
+        color: #11233E;
+        z-index: -1;
+    }
+
+    .footer a {
+        color: #11233E;
+        padding-left: 20px;
+        padding-right: 20px;
+        position: relative;
+    }
+
+    .footer p {
+        font-size: 20px;
+    }
+
+    .footericons {
+        padding: 0;
+    }
+
+    .footer img {
+        padding-bottom: 10px;
+    }
+
+
+
 }
 
-p {
-    line-height: 1.4;
+@media only screen and (min-width: 450px) {
+
+    body {
+        font-family: "Roboto Condensed";
+        font-size: 1.1rem;
+        margin: 0;
+        background-image: url(images/background.png);
+    }
+
+    #mobilemenu {
+        display: none;
+    }
+
+    p {
+        line-height: 1.4;
+    }
+
+    .menu {
+        display: flex;
+        justify-content: center;
+    }
+
+    nav {
+        width: 70%;
+        height: 10%;
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        align-items: center;
+        margin-top: 10px;
+        font-family: "Avenir LT Std";
+        font-weight: bold;
+        z-index: 10;
+
+    }
+
+    nav a {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        text-decoration: none;
+        color: white;
+
+
+    }
+
+    .menuline {
+        display: block;
+        width: 80%;
+        margin-top: -2vw;
+        margin-left: 10%;
+    }
+
+
+    #SoMeicons {
+        display: flex;
+        flex-direction: row;
+        position: absolute;
+        right: 20px;
+        align-items: center;
+        height: 12%;
+        margin-top: 10px;
+    }
+
+    #SoMeicons img {
+        padding: 5px;
+        width: 30px;
+    }
+
+
+    .footer {
+        background-color: #FFDB4D;
+        position: absolute;
+        margin-top: 50vw;
+        width: 100%;
+        text-align: center;
+        font-family: "Avenir LT Std";
+        color: #11233E;
+    }
+
+    .footer a {
+        color: #11233E;
+        padding-left: 20px;
+        padding-right: 20px;
+        position: relative;
+    }
+
+    .footer p {
+        font-size: 20px;
+    }
+
+    .footericons {
+        padding: 0;
+    }
+
+    .footer img {
+        padding-bottom: 10px;
+    }
+
 }
-
-.menu {
-    display: flex;
-    justify-content: center;
-}
-
-nav {
-    width: 70%;
-    height: 10%;
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    align-items: center;
-    margin-top: 10px;
-    font-family: "Avenir LT Std";
-    font-weight: bold;
-    z-index: 10;
-
-}
-
-nav a {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    text-decoration: none;
-    color: white;
-
-
-}
-
-.menuline {
-    display: block;
-    width: 80%;
-    margin-top: -2vw;
-    margin-left: 10%;
-}
-
-.landing {
-    height: 10%;
-    width: 100%;
-    margin-top: -7vw;
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-
-}
-
-#SoMeicons {
-    display: flex;
-    flex-direction: row;
-    position: absolute;
-    right: 20px;
-    align-items: center;
-    height: 12%;
-    margin-top: 10px;
-}
-
-#SoMeicons img {
-    padding: 5px;
-    width: 30px;
-}
-
-
-.footer {
-    background-color: #FFDB4D;
-    position: absolute;
-    margin-top: 50vw;
-    width: 100%;
-    text-align: center;
-    font-family: "Avenir LT Std";
-    color: #11233E;
-}
-
-.footer a {
-    color: #11233E;
-    padding-left: 20px;
-    padding-right: 20px;
-    position: relative;
-}
-
-.footer p {
-    font-size: 20px;
-}
-
-.footericons {
-    padding: 0;
-}
-
-.footer img {
-    padding-bottom: 10px;
-}
-
-
 /* HOMEPAGE STARTS */
 
 #homelanding {
