@@ -971,6 +971,72 @@ input[type=date],
 
 }
 
+#map {
+    width: 50%;
+    float: right;
+    margin-top: 12%;
+    margin-right: 0%;
+}
+
+.mapimg {
+    position: absolute;
+}
+
+.seat {
+    position: relative;
+    background-color: rgba(255, 255, 255, 0);
+    cursor: pointer;
+}
+
+#bigseat1 {
+    margin-left: 10%;
+    margin-top: 3%;
+    transform: rotate(90deg);
+}
+
+#bigseat2, #bigseat3 {
+    margin-left: 10%;
+    margin-top: 5%;
+    transform: rotate(90deg);
+}
+
+#bigseat4, #bigseat5, #bigseat6 {
+    margin-left: 6%;
+    margin-top: -5%;
+}
+
+#bigseat7 {
+    margin-left: 6%;
+    margin-top: 5%
+}
+
+#bigseat8 {
+    margin-left: 1%
+}
+
+#smallseat1, #smallseat3 {
+    margin-left: 11%;
+    margin-top: 2%;
+}
+
+#smallseat2, #smallseat4 {
+    margin-left: 2%;
+}
+
+#smallseat5 {
+    margin-left: 1%;
+    margin-top: 3%;
+}
+
+#smallseat6, #smallseat7 {
+    margin-left: 1%;
+}
+
+#smallseat8 {
+    margin-left: 18%;
+}
+
+
 /* SNACKS & DRINKS PAGE STARTS */
 
 #mobilefood {
