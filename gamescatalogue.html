@@ -7,6 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
+    
+    <!-- Code by Michalsnik
+    (https://michalsnik.github.io/aos/) -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
     <style>
         < !-- @font-face {
             font-family: Avenir LT Std;
@@ -38,23 +44,23 @@
     </div>
     
     <section class="menu">
-        <nav>
-            <a href="booking.html">Booking</a>
-            <a href="snacks&drinks.html">Snacks & Drinks</a>
-            <a href="index.html"><img src="images/logo.png" style="width: 7em; height: 6em; z-index: 100"></a>
-            <a href="gamescatalogue.html">Games catalogue</a>
-            <a href="shop.html">Shop</a>
-        </nav>
-        <div id="SoMeicons">
-            <a href="#"><img src="images/insta_icon.png"></a>
-            <a href="#"><img src="images/fb_icon.png"></a>
-        </div>
-    </section>
+            <nav>
+                <a href="booking.html">Booking</a>
+                <a href="snacks&drinks.html">Snacks & Drinks</a>
+                <a href="index.html"><img src="images/logo.png" style="width: 7em; height: 6em; z-index: 100"></a>
+                <a href="gamescatalogue.html">Games catalogue</a>
+                <a href="shop.html">Shop</a>
+            </nav>
+            <div id="SoMeicons">
+                <a href="#"><img src="images/insta_icon.png"></a>
+                <a href="#"><img src="images/fb_icon.png"></a>
+            </div>
+        </section>
     <img src="images/menuline.png" class="menuline">
 
-    <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search">
+    <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search" data-aos="fade-right">
 
-    <div id="myBtnContainer">
+    <div id="myBtnContainer" data-aos="fade-right">
         <h2>Filters</h2>
         <button class="btn active" onclick="filterSelection('all')"> Show all</button>
         <div style="display: flex;">
@@ -69,7 +75,7 @@
             <button class="btn" onclick="filterSelection('10-15')"> 10-15</button>
             <button class="btn" onclick="filterSelection('15+')"> 10-15+</button>
         </div>
-        <div style="display: flex;">
+        <div style="display: flex;" >
             <h3>Players</h3><br>
             <button class="btn" onclick="filterSelection('2')">2</button>
             <button class="btn" onclick="filterSelection('3-7')"> 3-7</button>
@@ -96,45 +102,45 @@
     </div>
 
     <ul id="myUL">
-        <div class="filterDiv danish 10-15 15+ 3-7 family strategy economic-simulation">
+        <div class="filterDiv danish 10-15 15+ 3-7 family strategy economic-simulation" data-aos="zoom-in">
             <li><img src="images/7wonders.png"><br>
                 <h3>7 Wonders</h3>
                 <p>You are the leader of one of the 7 great cities of the Ancient World. Gather resources, develop...</p><a href="#">read more</a>
             </li>
         </div>
-        <div class="filterDiv english 2-9 10-15 15+ 3-7 7+ guessing negotiation">
+        <div class="filterDiv english 2-9 10-15 15+ 3-7 7+ guessing negotiation" data-aos="zoom-in" >
             <li><img src="images/bang.png"><br>
                 <h3>Bang! The dice games</h3>
                 <p>In the U.S. wild west, the eternal battle between the law and the outlaws keeps heating up...</p><a href="#">read more</a>
             </li>
         </div>
-        <div class="filterDiv english 10-15 15+ 2 3-7 strategy">
+        <div class="filterDiv english 10-15 15+ 2 3-7 strategy" data-aos="zoom-in" >
             <li><img src="images/forgottenisland.png"><br>
                 <h3>The Forgotten Island</h3>
                 <p>For those shipwrecked on the beach of this forgotten island, a chained boat is the only hope...</p><a href="#">read more</a>
             </li>
         </div>
-        <div class="filterDiv english 10-15 15+ 2 3-7 strategy">
+        <div class="filterDiv english 10-15 15+ 2 3-7 strategy" data-aos="zoom-in" >
             <li><img src="images/forbiddencastle.png"><br>
                 <h3>The Forbidden Castle</h3>
                 <p>The castle is the highlight of the hike, but hardly have the hikers entered the old walls, when the...</p><a href="#">read more</a>
             </li>
         </div>
-        <div class="filterDiv english 10-15 15+ 2 3-7 family">
+        <div class="filterDiv english 10-15 15+ 2 3-7 family" data-aos="zoom-in" >
             <li><img src="images/kanegawa.png"><br>
                 <h3>Kanagawa</h3>
                 <p>1840: In Kanagawa, the great bay of Tokyo, the Master Hokusai decided to open a painting....</p><a href="#">read more</a>
             </li>
         </div>
-        <div class="filterDiv danish 2-9 10-15 15+ 2 3-7 educational">
+        <div class="filterDiv danish 2-9 10-15 15+ 2 3-7 educational" data-aos="zoom-in" >
             <li><img src="images/cortex.png"><br>
                 <h3>Cortex</h3>
                 <p>Cortex Challenge is the exciting new brain-busting card game by Esdevium Games, which uses...</p><a href="#">read more</a>
             </li>
         </div>
     </ul>
-
-    <footer class="footer">
+    <br>
+    <footer class="footer" style="margin-top: 40vw;">
         <br>
         <a href="booking.html">Booking</a>
         <a href="snacks&drinks.html">Snacks & Drinks</a>
@@ -147,7 +153,10 @@
         <a href="#" class="footericons"><img src="images/fb_icon.png"></a>
     </footer>
     </div>
-
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
     <script>
         function myFunction() {
             // Declare variables

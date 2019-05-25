@@ -8,6 +8,12 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    
+    <!-- Code by Michalsnik
+    (https://michalsnik.github.io/aos/) -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
     <style>
         < !-- @font-face {
             font-family: Avenir LT Std;
@@ -40,12 +46,12 @@
 
     <section class="menu">
         <nav>
-            <a href="booking.html">Booking</a>
-            <a href="snacks&drinks.html">Snacks & Drinks</a>
-            <a href="index.html"><img src="images/logo.png" style="width: 7em; height: 6em; z-index: 100"></a>
-            <a href="gamescatalogue.html">Games catalogue</a>
-            <a href="shop.html">Shop</a>
-        </nav>
+                <a href="booking.html">Booking</a>
+                <a href="snacks&drinks.html">Snacks & Drinks</a>
+                <a href="index.html"><img src="images/logo.png" style="width: 7em; height: 6em; z-index: 100"></a>
+                <a href="gamescatalogue.html">Games catalogue</a>
+                <a href="shop.html">Shop</a>
+            </nav>
         <div id="SoMeicons">
             <a href="#"><img src="images/insta_icon.png"></a>
             <a href="#"><img src="images/fb_icon.png"></a>
@@ -53,8 +59,8 @@
     </section>
     <img src="images/menuline.png" class="menuline">
 
-    <h2>Booking conditions</h2>
-    <section id="conditions">
+    <h2 data-aos="zoom-in">Booking conditions</h2>
+    <section id="conditions" data-aos="zoom-in">
 
         <p><img src="images/smallPolygon.png">Booking a table is possible only for 3 and more people</p>
         <p><img src="images/smallPolygon.png">The booking closes one hour before opening hour</p>
@@ -65,23 +71,23 @@
     <br>
     <section id="booking">
 
-        <div id="bookinginformation">
+        <div id="bookinginformation" data-aos="fade-right">
             <h2>Booking information</h2>
             <form>
-                <input type="checkbox" name="Vestergade" value="Vestergade"> Vestergade
-                <input type="checkbox" name="Fredensgade" value="Fredensgade"> Fredensgade<br>
+                <input type="checkbox" name="Vestergade" value="Vestergade" style="cursor: pointer"> Vestergade
+                <input type="checkbox" name="Fredensgade" value="Fredensgade" style="cursor: pointer"> Fredensgade<br>
                 <input type="text" name="Name" placeholder="Name"><br>
                 <input type="text" name="Phone number" placeholder="Phone number"><br>
                 <input type="text" name="E-mail" placeholder="E-mail"><br>
                 <p>How many people will be there?</p>
-                <select name="people">
+                <select name="people" style="cursor: pointer">
                     <option value="3">3 people</option>
                     <option value="4">4 people</option>
                     <option value="5">5 people</option>
                     <option value="6">6 people</option>
                 </select>
                 <p>For how long do you want to play?</p>
-                <select name="people">
+                <select name="hours" style="cursor: pointer">
                     <option value="3">1 hour</option>
                     <option value="4">2 hours</option>
                     <option value="5">3 hours</option>
@@ -91,13 +97,30 @@
 
                 <input type="date" name="visit-day" max="2019-12-31">
                 <input type="time">
+                
+                <p>Do you want to book a game?</p>
+                <select name="Game" style="cursor: pointer">
+                    <option value="3">- - - - - -</option>
+                    <option value="3">7 Wonders</option>
+                    <option value="4">Bang! The dice games</option>
+                    <option value="5">The Forgotten Island</option>
+                    <option value="6">The Forbidden Castle</option>
+                    <option value="6">Kanagawa</option>
+                    <option value="6">Cortex</option>
+                </select>
+                <br><br>
             </form>
         </div>
         <br>
-        <div id="map">
+        
+        <div id="map" data-aos="fade-left">
             <img src="images/map.png" class="mapimg">
             <img src="images/bigseat.png" id="bigseat1" class="seat">
             <img src="images/bigseat.png" id="bigseat4" class="seat">
+            <div class="seattext">
+                <p style="color: white">Your table is</p>
+                <h2 class="seattextheading">- - - -</h2>
+            </div>
             <br>
             <img src="images/bigseat.png" id="bigseat2" class="seat">
             <img src="images/bigseat.png" id="bigseat5" class="seat">
@@ -118,12 +141,14 @@
             <img src="images/smallseat.png" id="smallseat6" class="seat">
             <img src="images/smallseat.png" id="smallseat7" class="seat">
             <img src="images/smallseat.png" id="smallseat8" class="seat">
-
         </div>
-
-
+        
     </section>
-
+    <br><br><br><br>
+    <a href="booking-confirmation.html">
+        <button class="submit">Submit</button>
+    </a>
+    
     <footer class="footer">
         <br>
         <a href="booking.html">Booking</a>
@@ -139,6 +164,10 @@
     
     <script src="js.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </div>
 </body>
 
