@@ -60,59 +60,18 @@
         <section class="landing" id="homelanding">
         </section>
 
-        <section class="basicinfo">
 
+        <section id="maininfo">
             <img src="images/redline.png" class="redline">
-
-            <div class="yellowleft" data-aos="fade-right">
-                <img src="images/popcorn.png" class="icon">
-                <p class="yellowlefttext">
-                    <br>
-                    Choose a drink or a snack from wide range of products and enjoy it while playing!
-                    <br><br><br><br>
-                    <a href="snacks&drinks.html" style="text-decoration: none;">
-                        <button class="yellowleftbutton">Check menu</button>
-                    </a>
-                    <br><br><br>
-                </p>
+            <img src="images/yellowpolygon1.png" class="yellowpolygonleft">
+            <div class="redcenter">
+                <img src="images/redpolygonedit.png" class="redpolygon">
             </div>
-
-            <div class="red">
-                <img src="images/cafe_icon.png" class="icon">
-                <p class="redtext">The board game café is a cozy place where you can meet up with your friends and do something as social and fun as playing board games.
-                    <br>
-                    <br>
-                    You can explore huge variety of board games for as long as you´re here for only
-                    <br><br>
-                    <img src="images/entryfee.png" class="entryfee">
-                    <br><br>
-                    <a href="booking.html" style="text-decoration: none;">
-                        <button class="redbutton">Book a table</button>
-                    </a>
-                    <br><br><br><br><br>
-                </p>
-            </div>
-            <div class="yellowright" data-aos="fade-left">
-                <img src="images/cards.png" class="icon">
-                <p class="yellowrighttext">
-                    <br>
-                    Together in both cafés we have over 750 games!
-                    <br>
-                    So come, choose and play!
-                    <br><br><br><br>
-                    <a href="gamescatalogue.html" style="text-decoration: none;">
-                        <button class="yellowleftbutton">Check games</button>
-                    </a>
-                    <br><br><br>
-                </p>
-            </div>
-
+            <img src="images/yellowpolygon2.png" class="yellowpolygonright">
         </section>
-
-        <br>
-
+        
         <section class="events">
-            <div data-aos="fade-right">
+            <div data-aos="fade-right" class="desktopevents">
                 <div class="event01">
                     <h2 style="padding: 0">Open Board Game Group</h2>
                     <img src="images/event01.jpg" class="event01img">
@@ -121,7 +80,27 @@
                     </a>
                 </div>
             </div>
-            <div data-aos="fade-left">
+            
+            <div data-aos="fade-right" class="mobileevents">
+                <div class="event01">
+                    <h2 style="padding: 0">Open Board Game Group</h2>
+                    <img src="images/event01.jpg" class="event01img">
+                    <a href="">
+                        <button class="attendevent01"><strong>f</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Attend</button>
+                    </a>
+                </div>
+            </div>
+            <div data-aos="fade-left" class="desktopevents">
+                <div class="event02">
+                    <h2 style="text-align: right; padding: 0">Game of Throne Night</h2>
+                    <img src="images/event02.png" class="event02img">
+                    <a href="">
+                        <button class="attendevent02"><strong>f</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Attend</button>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="mobileevents">
                 <div class="event02">
                     <h2 style="text-align: right; padding: 0">Game of Throne Night</h2>
                     <img src="images/event02.png" class="event02img">
@@ -135,7 +114,7 @@
 
 
         <div class="openinghours">
-            <div data-aos="fade-up">
+            <div data-aos="fade-up" class="desktophours">
                 <div class="vestergade">
                     <h2 class="Vopeningheading">Vestergade 58A</h2>
                     <div class="vestergadetext">
@@ -145,7 +124,28 @@
                     <img src="images/vestergade_opening.png" class="vestergadeopening">
                 </div>
             </div>
-            <div data-aos="fade-up">
+            <div data-aos="fade-up" class="desktophours">
+                <div class="fredensgade">
+                    <h2 class="Fopeningheading">Fredensgade 38</h2>
+                    <div class="fredensgadetext">
+                        <br><br><br><br><br><br><br><br>
+                        <p>The café in Fredensgade has more space, better time and aside from all the games you already know this is also where all the more advanced games are found.</p>
+                    </div>
+                    <img src="images/fredesgade_opening.png" class="fredensgadeopening">
+                </div>
+            </div>
+            
+            <div class="mobilehours">
+                <div class="vestergade">
+                    <h2 class="Vopeningheading">Vestergade 58A</h2>
+                    <div class="vestergadetext">
+                        <br><br><br><br><br><br><br><br>
+                        <p>The café in Vestergade is in the cozy street, in the middle of town. Here the couches are soft and the vibe is chilled. Perfect for dates, a rainy day or a great start for a night on the town.</p>
+                    </div>
+                    <img src="images/vestergade_opening.png" class="vestergadeopening">
+                </div>
+            </div>
+            <div class="mobilehours">
                 <div class="fredensgade">
                     <h2 class="Fopeningheading">Fredensgade 38</h2>
                     <div class="fredensgadetext">
@@ -174,6 +174,7 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
+
     </script>
 </body>
 

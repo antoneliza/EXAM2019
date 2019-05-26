@@ -16,11 +16,6 @@ jQuery(document).ready(function($){
     
     });
     
-    if
-            ($(".seat").each(function('background-color', 'rgba(255, 255, 255, 0)')) {
-                $("seattextheading").html('- - - -')
-            })
-    
 
     $('#bigseat1').on('click',function(){
         $(".seattextheading").html('1');

@@ -6,7 +6,7 @@
     /* code by Jelena Jovanovic (https://codepen.io/plavookac/pen/qomrMw)*/
 
     @import url('https://fonts.googleapis.com/css?family=Varela+Round');
-    
+
     html,
     body {
         font-family: "Roboto Condensed";
@@ -215,21 +215,148 @@
     .footer img {
         padding-bottom: 10px;
     }
-    
+
     /* HOMEPAGE MOBILE STARTS */
-    
+
     #mobilecontent #homelanding {
         position: relative;
         width: 100%;
-        height: 50%;
+        height: 30em;
+        z-index: 200;
     }
-    
-    #mobilecontent .red {
-        width: 60%;
+
+    #mobilecontent #maininfo {
         position: relative;
-        top: auto;
+        width: 100%;
+        height: auto;
     }
-    
+
+    #mobilecontent .redline {
+        top: -300px;
+    }
+
+    #mobilecontent .redpolygon {
+        width: 60%;
+        display: block;
+        margin-top: -390px;
+        margin-left: 20%;
+    }
+
+    #mobilecontent .redcenter {
+        animation: none;
+    }
+
+    #mobilecontent .yellowpolygonleft {
+        margin-top: -170px;
+        width: 40%;
+    }
+
+    #mobilecontent .yellowpolygonright {
+        width: 40%;
+        margin-top: -170px;
+    }
+
+    #mobilecontent .openinghours {
+
+        position: absolute;
+    }
+
+    #mobilecontent h2 {
+        font-size: 10px;
+    }
+
+    #mobilecontent .event01 {
+        width: 100%;
+        margin: 10px;
+    }
+
+    #mobilecontent .event02 {
+        width: 100%;
+        margin: 10px;
+    }
+
+    #mobilecontent .events {
+        width: 100%;
+        margin: 0;
+    }
+
+    #mobilecontent .desktopevents {
+        display: none;
+    }
+
+    #mobilecontent .mobileevents {
+        display: contents;
+    }
+
+    #mobilecontent .desktophours {
+        display: none;
+    }
+
+    #mobilecontent .mobilehours {
+        display: contents;
+    }
+
+    #mobilecontent .vestergade {
+        width: 100%;
+        float: left;
+        position: relative;
+        display: block;
+        flex-direction: row;
+    }
+
+    #mobilecontent .Vopeningheading {
+        float: right;
+        margin-right: 0;
+    }
+
+    .Vphone {
+        padding: 0;
+        float: right;
+        right: 0;
+    }
+
+    #mobilecontent .vestergadetext {
+        width: 50%;
+        float: left;
+        position: relative;
+        text-align: right;
+        margin-right: 0px;
+    }
+
+    #mobilecontent .vestergadeopening {
+        width: 50%;
+        float: right;
+        margin-right: 0;
+        top: 0;
+        padding: 0;
+    }
+
+    .fredensgade {
+        width: 50%;
+        float: right;
+    }
+
+    .Fopeningheading {
+        padding: 0;
+        float: left;
+        margin-left: 5%;
+    }
+
+    .fredensgadetext {
+        width: 50%;
+        float: right;
+    }
+
+    .fredensgadeopening {
+        width: 40%;
+        margin-left: 5%;
+        float: left;
+    }
+
+
+
+
+
 
     /* BOOKING MOBILE PAGE STARTS*/
 
@@ -294,15 +421,15 @@
         font-size: 20px;
         color: white;
     }
-    
+
     .bookingconfirmation {
-    display: block;
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 5%;
-    margin-bottom: 15vw;
-}
+        display: block;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 5%;
+        margin-bottom: 15vw;
+    }
 
 
     /* SNACKS AND DRINKS MOBILE PAGE STARTS */
@@ -412,7 +539,7 @@
 }
 
 @media only screen and (min-width: 450px) {
-    
+
     html {
         scroll-behavior: smooth;
     }
@@ -523,8 +650,8 @@
 
 #homelanding {
     background-image: none;
-    background-color: black;
-    height: 50em;
+    position: relative;
+    height: 37em;
     z-index: -200;
     margin-top: -6vw;
 }
@@ -559,56 +686,51 @@
     padding-bottom: 10px;
 }
 
-.icon {
-    width: 16%;
-    margin-left: 42%;
-    margin-top: 12%;
+.redline {
+    position: relative;
+    width: 100%;
+    min-width: 100%;
+    z-index: -50;
+    margin-top: 6%;
+    top: 0;
+
 }
 
-.yellowleft {
+#maininfo {
+    position: absolute;
+    width: 100%;
+
+}
+
+.yellowpolygonleft {
+    position: relative;
     float: left;
-    width: 22%;
-    background-image: url(images/yellowPolygon.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    margin-top: -3.5%;
-    margin-left: 9.5%;
+    margin-top: -200px;
+    margin-left: 10%;
+    width: 20%;
+    z-index: -1;
 }
 
-.yellowlefttext {
-    width: 64%;
-    margin-left: 18%;
-    color: #162D50;
-    text-align: center;
+
+.yellowpolygonright {
+    position: relative;
+    float: right;
+    margin-top: -200px;
+    margin-right: 10%;
+    width: 20%;
+    z-index: -1;
 }
 
-.yellowleftbutton {
-    font-family: 'Avenir LT Std', serif;
-    color: white;
-    font-size: 1rem;
-    padding: 0.7rem;
-    font-weight: 400;
-    background-color: #CE3036;
-    border: none;
-    box-shadow: 0vw 0vw 1vw rgba(0, 0, 0, 0.3);
-    cursor: pointer;
-    transition-duration: 0.8s;
+.redpolygon {
+    position: absolute;
+    margin-top: -280px;
+    width: 30%;
+    margin-left: 5%;
+
 }
 
-.yellowleftbutton:hover {
-    background-color: white;
-    color: #CE3036;
-}
 
-.red {
-    float: left;
-    width: 37%;
-    background-image: url(images/redPolygon.png);
-    background-size: cover;
-    margin-top: -11.5%;
-}
-
-.red {
+.redcenter {
     /* -webkit-animation: mover 1s infinite  alternate; */
     animation: mover 2s infinite alternate;
 }
@@ -633,17 +755,6 @@
     }
 }
 
-.redtext {
-    width: 60%;
-    margin-left: 20%;
-    color: white;
-    text-align: center;
-}
-
-.entryfee {
-    width: 30%;
-}
-
 .redbutton {
     font-family: 'Avenir LT Std', serif;
     color: #162D50;
@@ -655,60 +766,17 @@
     box-shadow: 0vw 0vw 1vw rgba(0, 0, 0, 0.3);
     cursor: pointer;
     transition-duration: 0.8s;
+    margin-top: 80px;
+    margin-left: -355px;
+    position: absolute;
 }
 
 .redbutton:hover {
     font-size: 1rem;
 }
 
-.yellowright {
-    float: right;
-    width: 22%;
-    background-image: url(images/yellowPolygon.png);
-    background-size: cover;
-    margin-right: 9.5%;
-    margin-top: -3.5%;
-}
-
-.yellowrighttext {
-    width: 70%;
-    margin-left: 15%;
-    color: #162D50;
-    text-align: center;
-}
-
-.redline {
-    position: absolute;
-    width: 100%;
-    z-index: -50;
-    margin-top: 6%;
-}
-
-#poligons {
-    display: block;
-    position: absolute;
-    text-align: center;
-    width: 100%;
-    height: 48em;
-    background-image: url(images/background.png);
-    background-repeat: no-repeat;
-    z-index: 1;
-}
-
-#poligons img {
-    vertical-align: middle;
-    margin-top: -330px;
-}
-
-#poligons p {
-    position: absolute;
-}
-
-h4 {
-    font-family: 'Avenir LT Std', serif;
-    font-size: 1.4rem;
-    padding: 0;
-    color: white;
+.mobileevents {
+    display: none;
 }
 
 .events {
@@ -803,6 +871,7 @@ h4 {
     color: white;
     margin-top: 28vw;
     margin-bottom: 55vw;
+    position: absolute;
 }
 
 h5 {
@@ -1023,13 +1092,16 @@ input[type=date],
     transform: rotate(90deg);
 }
 
-#bigseat2, #bigseat3 {
+#bigseat2,
+#bigseat3 {
     margin-left: 10%;
     margin-top: 5%;
     transform: rotate(90deg);
 }
 
-#bigseat4, #bigseat5, #bigseat6 {
+#bigseat4,
+#bigseat5,
+#bigseat6 {
     margin-left: 6%;
     margin-top: -5%;
 }
@@ -1043,12 +1115,14 @@ input[type=date],
     margin-left: 1%
 }
 
-#smallseat1, #smallseat3 {
+#smallseat1,
+#smallseat3 {
     margin-left: 11%;
     margin-top: 2%;
 }
 
-#smallseat2, #smallseat4 {
+#smallseat2,
+#smallseat4 {
     margin-left: 2%;
 }
 
@@ -1057,7 +1131,8 @@ input[type=date],
     margin-top: 3%;
 }
 
-#smallseat6, #smallseat7 {
+#smallseat6,
+#smallseat7 {
     margin-left: 1%;
 }
 
