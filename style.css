@@ -186,7 +186,6 @@
 
 
     .footer {
-        display: none;
         position: relative;
         background-color: #FFDB4D;
         position: absolute;
@@ -257,8 +256,9 @@
     }
 
     #mobilecontent .openinghours {
+        width: 100%;
 
-        position: absolute;
+        position: relative;
     }
 
     #mobilecontent h2 {
@@ -296,17 +296,21 @@
         display: contents;
     }
 
+
+
     #mobilecontent .vestergade {
         width: 100%;
         float: left;
         position: relative;
         display: block;
         flex-direction: row;
+        margin-top: ;
     }
 
     #mobilecontent .Vopeningheading {
         float: right;
-        margin-right: 0;
+        margin-right: 35px;
+        font-size: 18px;
     }
 
     .Vphone {
@@ -316,40 +320,51 @@
     }
 
     #mobilecontent .vestergadetext {
-        width: 50%;
+        width: 40%;
         float: left;
         position: relative;
         text-align: right;
         margin-right: 0px;
+        margin-top: -45%;
+        margin-left: 20px;
     }
 
     #mobilecontent .vestergadeopening {
-        width: 50%;
+        width: 43%;
         float: right;
-        margin-right: 0;
+        margin-right: 35px;
         top: 0;
         padding: 0;
     }
 
-    .fredensgade {
-        width: 50%;
-        float: right;
-    }
-
-    .Fopeningheading {
-        padding: 0;
+    #mobilecontent .fredensgade {
+        width: 100%;
         float: left;
-        margin-left: 5%;
+        position: relative;
+        display: block;
+        flex-direction: row;
     }
 
-    .fredensgadetext {
-        width: 50%;
-        float: right;
+    #mobilecontent .Fopeningheading {
+        float: left;
+        margin-left: 35px;
+        font-size: 18px;
     }
 
-    .fredensgadeopening {
+    #mobilecontent .fredensgadetext {
         width: 40%;
-        margin-left: 5%;
+        float: right;
+        position: relative;
+        text-align: left;
+        margin-right: 20px;
+        margin-top: -35%;
+        margin-left: 0;
+    }
+
+    #mobilecontent .fredensgadeopening {
+        width: 43%;
+        margin-right: 35px;
+        margin-left: 0;
         float: left;
     }
 
@@ -871,7 +886,7 @@
     color: white;
     margin-top: 28vw;
     margin-bottom: 55vw;
-    position: absolute;
+    position: relative;
 }
 
 h5 {
@@ -933,6 +948,9 @@ h5 {
     float: left;
 }
 
+.mobilehours {
+    display: none;
+}
 /* BOOKING PAGE STARTS */
 
 #conditions {
