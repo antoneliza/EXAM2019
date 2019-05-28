@@ -1,9 +1,8 @@
 @media only screen and (max-width: 449px) {
-    .menu {
+    #mobilecontent .menu {
         display: none;
     }
 
-    /* code by Jelena Jovanovic (https://codepen.io/plavookac/pen/qomrMw)*/
 
     @import url('https://fonts.googleapis.com/css?family=Varela+Round');
 
@@ -21,12 +20,16 @@
         margin: 0;
     }
 
-    .menuline {
+    #mobilecontent {
+        z-index: -1;
+    }
+
+    #mobilecontent .menuline {
         display: none;
     }
 
     .menu {
-        z-index: 100;
+        z-index: 200;
     }
 
     #conditions {
@@ -37,14 +40,18 @@
         z-index: 1;
     }
 
+    /* code by Jelena Jovanovic (https://codepen.io/plavookac/pen/qomrMw) START */
+
     .header {
         width: 100%;
         max-width: 100%;
         box-shadow: none;
         height: 60px !important;
         overflow: hidden;
-        z-index: 2;
+        z-index: 300;
         background-color: #162D50;
+        position: absolute;
+        top: 0;
     }
 
     #sidebarMenu {
@@ -57,7 +64,8 @@
         font-family: Avenir LT Std;
         background: rgb(42, 92, 166);
         background: linear-gradient(0deg, rgba(42, 92, 166, 1) 0%, rgba(22, 45, 80, 1) 100%);
-        z-index: 2;
+        z-index: 300;
+        top: 60px;
 
     }
 
@@ -106,9 +114,7 @@
         box-sizing: border-box;
         cursor: pointer;
         position: absolute;
-        z-index: 99;
-        height: 100%;
-        width: 100%;
+        z-index: 301;
         top: 22px;
         right: 15px;
         height: 22px;
@@ -171,6 +177,8 @@
         margin: 5px;
     }
 
+    /* code by Jelena Jovanovic (https://codepen.io/plavookac/pen/qomrMw) END */
+
     #mobilecontent h2 {
         font-family: Avenir LT Std;
         text-transform: uppercase;
@@ -186,67 +194,93 @@
 
 
     .footer {
-        position: relative;
-        background-color: #FFDB4D;
-        position: absolute;
-        width: 100%;
-        text-align: center;
-        font-family: "Avenir LT Std";
-        color: #11233E;
-        z-index: 3;
+        display: none;
     }
 
-    .footer a {
-        color: #11233E;
-        padding-left: 20px;
-        padding-right: 20px;
-        position: relative;
-    }
-
-    .footer p {
-        font-size: 20px;
-    }
-
-    .footericons {
-        padding: 0;
-    }
-
-    .footer img {
-        padding-bottom: 10px;
-    }
 
     /* HOMEPAGE MOBILE STARTS */
 
     #mobilecontent #homelanding {
+        background-image: url(images/mobilelandingbackground.jpg);
+        background-repeat: no-repeat;
         position: relative;
         width: 100%;
-        height: 30em;
-        z-index: 200;
+        height: 25em;
+        z-index: 100;
+        margin-top: 0;
     }
 
     #mobilecontent #maininfo {
         position: relative;
         width: 100%;
-        height: auto;
+        height: 100%;
     }
 
     #mobilecontent .redline {
-        top: -300px;
+        position: absolute;
+        margin-top: -50%;
     }
 
-    #mobilecontent .redpolygon {
-        width: 60%;
-        display: block;
-        margin-top: -390px;
-        margin-left: 20%;
+    #mobilecontent #maininfo .polygons {
+        position: relative;
+        height: 100%;
+        margin-top: 20%;
     }
+
+    #mobilecontent .yellowleft {
+        background-image: none;
+        position: relative;
+        width: 200px;
+        height: 200px;
+        margin-top: 41%;
+        margin-left: 6%;
+        float: left;
+        z-index: 200;
+
+    }
+
+    #mobilecontent .yellowleft img {
+        width: 200px;
+        margin-left: 0;
+    }
+
+    #mobilecontent .yellowright {
+        background-image: none;
+        position: absolute;
+        width: 200px;
+        height: 200px;
+        margin-top: 19%;
+        margin-left: 52%;
+        float: right;
+        z-index: 200;
+
+    }
+
+    #mobilecontent .yellowright img {
+        width: 200px;
+        margin-left: 0;
+    }
+
+
 
     #mobilecontent .redcenter {
         animation: none;
+        background-image: none;
+        position: relative;
+        width: 280px;
+        height: 280px;
+        margin-top: -84%;
+        margin-left: -27%;
+        z-index: 200;
+    }
+
+    #mobilecontent .redcenter img {
+        width: 280px;
+        display: block;
     }
 
     #mobilecontent .yellowpolygonleft {
-        margin-top: -170px;
+        margin-top: -168px;
         width: 40%;
     }
 
@@ -261,13 +295,17 @@
         position: relative;
     }
 
-    #mobilecontent h2 {
+    #mobilecontent .mobileevent h2 {
         font-size: 10px;
     }
 
     #mobilecontent .event01 {
         width: 100%;
         margin: 10px;
+    }
+
+    #mobilecontent .event01 h2 {
+        float: left;
     }
 
     #mobilecontent .event02 {
@@ -325,7 +363,7 @@
         position: relative;
         text-align: right;
         margin-right: 0px;
-        margin-top: -45%;
+        margin-top: -35%;
         margin-left: 20px;
     }
 
@@ -363,8 +401,8 @@
 
     #mobilecontent .fredensgadeopening {
         width: 43%;
-        margin-right: 35px;
-        margin-left: 0;
+        margin-left: 35px;
+        margin-right: 0;
         float: left;
     }
 
@@ -412,6 +450,10 @@
     #mobilecontent #booking {
         top: 0;
         margin-top: 5%;
+    }
+
+    #mobilecontent .submit {
+        margin-top: -60%;
     }
 
     #mobilecontent #bookinginformation input[type=checkbox] {
@@ -465,7 +507,7 @@
         margin-left: auto;
         margin-right: auto;
         display: block;
-        margin-top: 20px;
+        margin-top: 30px;
     }
 
     /* GAMES CATALOGUE MOBILE PAGE STARTS */
@@ -474,7 +516,7 @@
         width: 80%;
         margin-left: 6%;
         margin-top: 4%;
-        position: relative
+        position: relative;
     }
 
     #mobilecontent #myBtnContainer {
@@ -491,44 +533,55 @@
         font-size: 20px;
     }
 
-    #mobilecontent #myUL {
+    #mobilecontent #mobilemyUL {
+        display: contents;
         padding: 0;
         width: 100%;
         z-index: 2000;
-        position: relative;
+        position: absolute;
         text-align: justify;
+        top: 20%;
     }
 
-    #mobilecontent #myUL img {
+    #mobilecontent #myUL {
+        display: none;
+    }
+
+    #mobilecontent #mobilemyUL img {
         width: 100%;
         position: relative;
         margin-left: 0;
     }
 
-    #mobilecontent #myUL li {
+    #mobilecontent #mobilemyUL div {
+        padding: 16px;
+    }
+
+    #mobilecontent #mobilemyUL li {
         width: 100%;
         position: relative;
         margin-left: 0;
-        padding-right: 20px;
+        padding-right: ;
         display: inline-block;
     }
 
-    #mobilecontent #myUL p {
+    #mobilecontent #mobilemyUL p {
         position: relative;
         margin-left: 0;
-        font-size: ;
+        font-size: 13px;
         width: 100%;
         font-family: Avenir LT Std;
+        color: white;
     }
 
-    #mobilecontent #myUL h3 {
+    #mobilecontent #mobilemyUL h3 {
         font-size: 15px;
         margin: 0;
         padding-bottom: 10px;
         text-align: center;
     }
 
-    #mobilecontent #myUL a {
+    #mobilecontent #mobilemyUL a {
         display: block;
         margin-left: auto;
         margin-right: auto;
@@ -536,14 +589,44 @@
     }
 
 
-    #mobilecontent #myUL h3 {
+    #mobilecontent #mobilemyUL h3 {
         font-family: Avenir LT Std;
+    }
+
+    #mobilemyUL li a {
+        text-decoration: none;
+        font-size: 16px;
+        color: white;
+        font-family: Avenir LT Std;
+        background-color: #DB353B;
+        padding: 8px 18px 8px 18px;
+    }
+
+    #mobilemyUL li a:hover {
+        background-color: white;
+        color: #DB353B;
+
     }
 
     #mobilecontent .show {
         display: inline-block;
         width: 40%;
         position: relative;
+    }
+
+    /* SHOP MOBILE PAGE START */
+
+    #mobilecontent .menu {
+        display: none
+    }
+
+    #mobilecontent .comingsoon {
+        position: absolute;
+        top: 20%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
     }
 
 
@@ -577,6 +660,7 @@
     .menu {
         display: flex;
         justify-content: center;
+        z-index: 2;
     }
 
     nav {
@@ -589,7 +673,7 @@
         margin-top: 10px;
         font-family: "Avenir LT Std";
         font-weight: bold;
-        z-index: 10;
+        z-index: 200;
 
     }
 
@@ -664,33 +748,11 @@
 /* HOMEPAGE STARTS */
 
 #homelanding {
-    background-image: none;
+    background-image: url(images/landingbackground.jpg);
     position: relative;
-    height: 37em;
+    height: 38em;
     z-index: -200;
-    margin-top: -6vw;
-}
-
-#homefooter {
-    position: absolute;
-    z-index: 200;
-    width: 100%;
-    height: 10rem;
-    background-color: #FFDB4D;
-    text-align: center;
-    color: #11233E;
-}
-
-
-#homefooter a {
-    color: #11233E;
-    padding-left: 20px;
-    padding-right: 20px;
-    position: relative;
-}
-
-#homefooter p {
-    font-size: 20px;
+    margin-top: -100px;
 }
 
 .footericons {
@@ -706,7 +768,7 @@
     width: 100%;
     min-width: 100%;
     z-index: -50;
-    margin-top: 6%;
+    margin-top: ;
     top: 0;
 
 }
@@ -717,33 +779,97 @@
 
 }
 
+.polygons {
+    display: flex;
+    flex-direction: row;
+    margin-top: ;
+}
+
 .yellowpolygonleft {
     position: relative;
     float: left;
-    margin-top: -200px;
-    margin-left: 10%;
-    width: 20%;
-    z-index: -1;
+}
+
+.yellowleft {
+    background-image: url(images/yellowpolygon1b.png);
+    background-repeat: no-repeat;
+    position: relative;
+    width: 300px;
+    height: 350px;
+    margin-top: -70%;
+    margin-left: 30%;
+    float: left;
+}
+
+.yellowleft img {
+    -webkit-transition: all ease 0.5s;
+    -moz-transition: all ease 0.5s;
+    -o-transition: all ease 0.5s;
+    -ms-transition: all ease 0.5s;
+    transition: all ease 0.5s;
+}
+
+.yellowleft img:hover {
+    opacity: 0;
 }
 
 
 .yellowpolygonright {
     position: relative;
+}
+
+.yellowright {
+    background-image: url(images/yellowpolygon2b.png);
+    background-repeat: no-repeat;
+    position: relative;
+    width: 300px;
+    height: 350px;
     float: right;
-    margin-top: -200px;
-    margin-right: 10%;
-    width: 20%;
-    z-index: -1;
+    margin-top: -15.5%;
+    margin-left: 6%;
+
+}
+
+.yellowright img {
+    -webkit-transition: all ease 0.5s;
+    -moz-transition: all ease 0.5s;
+    -o-transition: all ease 0.5s;
+    -ms-transition: all ease 0.5s;
+    transition: all ease 0.5s;
+}
+
+.yellowright img:hover {
+    opacity: 0;
 }
 
 .redpolygon {
     position: absolute;
-    margin-top: -280px;
-    width: 30%;
-    margin-left: 5%;
+    width: auto;
 
 }
 
+.redcenter {
+    background-image: url(images/redpolygonedit.png);
+    background-repeat: no-repeat;
+    width: 400px;
+    height: 465px;
+    position: relative;
+    margin-top: -20%;
+    margin-left: 13.5%;
+
+}
+
+.redcenter img {
+    -webkit-transition: all ease 0.5s;
+    -moz-transition: all ease 0.5s;
+    -o-transition: all ease 0.5s;
+    -ms-transition: all ease 0.5s;
+    transition: all ease 0.5s;
+}
+
+.redcenter img:hover {
+    opacity: 0;
+}
 
 .redcenter {
     /* -webkit-animation: mover 1s infinite  alternate; */
@@ -770,25 +896,6 @@
     }
 }
 
-.redbutton {
-    font-family: 'Avenir LT Std', serif;
-    color: #162D50;
-    font-size: 1.2rem;
-    padding: 0.7rem;
-    font-weight: 700;
-    background-color: #FFDB4D;
-    border: none;
-    box-shadow: 0vw 0vw 1vw rgba(0, 0, 0, 0.3);
-    cursor: pointer;
-    transition-duration: 0.8s;
-    margin-top: 80px;
-    margin-left: -355px;
-    position: absolute;
-}
-
-.redbutton:hover {
-    font-size: 1rem;
-}
 
 .mobileevents {
     display: none;
@@ -951,6 +1058,7 @@ h5 {
 .mobilehours {
     display: none;
 }
+
 /* BOOKING PAGE STARTS */
 
 #conditions {
@@ -992,7 +1100,7 @@ h2 {
     background: rgb(219, 53, 59);
     background: linear-gradient(0deg, rgba(219, 53, 59, 1) 0%, rgba(219, 53, 59, 0.165703781512605) 100%);
     position: absolute;
-    top: 22em;
+    margin-top: 10%;
     margin-left: 150px;
     width: 30%;
 }
@@ -1004,6 +1112,7 @@ h2 {
 }
 
 form {
+    position: relative;
     color: white;
     padding-left: 15px;
     font-family: "Roboto Condensed";
@@ -1211,6 +1320,10 @@ input[type=date],
 
 
 /* GAMES CATALOGUE PAGE STARTS */
+
+#mobilemyUL {
+    display: none;
+}
 
 #myInput {
     width: 15.5%;

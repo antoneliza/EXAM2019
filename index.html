@@ -19,14 +19,14 @@
             font-family: Avenir LT Std;
             src: url('AvenirLTStd-Black.otf');
         }
-
     </style>
 </head>
 
 <body>
     <div id="mobilecontent">
         <div id="mobilemenu">
-            <div class="header"><img src="images/logo.png" style="width:75px; margin-left: auto; margin-right: auto; display: block"></div>
+            <!-- code by Jelena Jovanovic (https://codepen.io/plavookac/pen/qomrMw) START -->
+            <div class="header"><a href="index.html"><img src="images/logo.png" alt="logo" style="width:75px; margin-left: auto; margin-right: auto; display: block"></a></div>
             <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu">
             <label for="openSidebarMenu" class="sidebarIconToggle">
                 <div class="spinner diagonal part-1"></div>
@@ -39,52 +39,62 @@
                     <li><a href="snacks&drinks.html">Snacks & Drinks</a></li>
                     <li><a href="gamescatalogue.html">Games catalogue</a></li>
                     <li><a href="shop.html">Shop</a></li>
-                    <li><a href="#"><img src="images/insta_icon.png"></a><a href="#"><img src="images/fb_icon.png"></a></li>
+                    <li><a href="#"><img src="images/insta_icon.png" alt="instagram icon"></a><a href="#"><img src="images/fb_icon.png" alt="facebook icon"></a></li>
                 </ul>
             </div>
+            <!-- code by Jelena Jovanovic (https://codepen.io/plavookac/pen/qomrMw) END -->
         </div>
         <section class="menu">
             <nav>
                 <a href="booking.html" data-aos="fade-down">Booking</a>
                 <a href="snacks&drinks.html" data-aos="fade-down">Snacks & Drinks</a>
-                <a href="index.html"><img src="images/logo.png" style="width: 7em; height: 6em; z-index: 100"></a>
+                <a href="index.html"><img src="images/logo.png" alt="logo" style="width: 7em; height: 6em; z-index: 100"></a>
                 <a href="gamescatalogue.html" data-aos="fade-down">Games catalogue</a>
                 <a href="shop.html" data-aos="fade-down">Shop</a>
             </nav>
             <div id="SoMeicons">
-                <a href="#"><img src="images/insta_icon.png"></a>
-                <a href="#"><img src="images/fb_icon.png"></a>
+                <a href="#"><img src="images/insta_icon.png" alt="instagram icon"></a>
+                <a href="#"><img src="images/fb_icon.png" alt="facebook icon"></a>
             </div>
         </section>
-        <img src="images/menuline.png" class="menuline">
+        <img src="images/menuline.png" class="menuline" alt="menu line">
         <section class="landing" id="homelanding">
+        
         </section>
 
 
         <section id="maininfo">
-            <img src="images/redline.png" class="redline">
-            <img src="images/yellowpolygon1.png" class="yellowpolygonleft">
-            <div class="redcenter">
-                <img src="images/redpolygonedit.png" class="redpolygon">
+            <img src="images/redline.png" class="redline" alt="red line">
+            <div class="polygons">
+                <div>
+                    <div class="yellowleft">
+                        <a href="snacks&drinks.html"><img src="images/yellowpolygon1.png" class="yellowpolygonleft" alt="snacks and drinks"></a>
+                    </div>
+                </div>
+                <div class="redcenter">
+                    <a href="booking.html"><img src="images/redpolygonedit2.png" alt="book a table"></a>
+                </div>
+                <div class="yellowright">
+                    <a href="gamescatalogue.html"><img src="images/yellowpolygon2.png" class="yellowpolygonright" alt="check games catalogue"></a>
+                </div>
             </div>
-            <img src="images/yellowpolygon2.png" class="yellowpolygonright">
         </section>
-        
+
         <section class="events">
             <div data-aos="fade-right" class="desktopevents">
                 <div class="event01">
                     <h2 style="padding: 0">Open Board Game Group</h2>
-                    <img src="images/event01.jpg" class="event01img">
+                    <img src="images/event01.jpg" class="event01img" alt="board game group picture">
                     <a href="">
                         <button class="attendevent01"><strong>f</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Attend</button>
                     </a>
                 </div>
             </div>
-            
+
             <div data-aos="fade-right" class="mobileevents">
                 <div class="event01">
                     <h2 style="padding: 0">Open Board Game Group</h2>
-                    <img src="images/event01.jpg" class="event01img">
+                    <img src="images/event01.jpg" class="event01img" alt="board game group picture">
                     <a href="">
                         <button class="attendevent01"><strong>f</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Attend</button>
                     </a>
@@ -92,18 +102,18 @@
             </div>
             <div data-aos="fade-left" class="desktopevents">
                 <div class="event02">
-                    <h2 style="text-align: right; padding: 0">Game of Throne Night</h2>
-                    <img src="images/event02.png" class="event02img">
+                    <h2 style="text-align: right; padding: 0">Game of Thrones Night</h2>
+                    <img src="images/event02.png" class="event02img" alt="Game of Thrones">
                     <a href="">
                         <button class="attendevent02"><strong>f</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Attend</button>
                     </a>
                 </div>
             </div>
-            
+
             <div class="mobileevents">
                 <div class="event02">
-                    <h2 style="text-align: right; padding: 0">Game of Throne Night</h2>
-                    <img src="images/event02.png" class="event02img">
+                    <h2 style="text-align: right; padding: 0">Game of Thrones Night</h2>
+                    <img src="images/event02.png" class="event02img" alt="Game of Thrones">
                     <a href="">
                         <button class="attendevent02"><strong>f</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Attend</button>
                     </a>
@@ -121,7 +131,7 @@
                         <br><br><br><br><br><br><br><br>
                         <p>The café in Vestergade is in the cozy street, in the middle of town. Here the couches are soft and the vibe is chilled. Perfect for dates, a rainy day or a great start for a night on the town.</p>
                     </div>
-                    <img src="images/vestergade_opening.png" class="vestergadeopening">
+                    <img src="images/vestergade_opening.png" class="vestergadeopening" alt="Vestergade opening hours">
                 </div>
             </div>
             <div data-aos="fade-up" class="desktophours">
@@ -131,10 +141,10 @@
                         <br><br><br><br><br><br><br><br>
                         <p>The café in Fredensgade has more space, better time and aside from all the games you already know this is also where all the more advanced games are found.</p>
                     </div>
-                    <img src="images/fredesgade_opening.png" class="fredensgadeopening">
+                    <img src="images/fredesgade_opening.png" class="fredensgadeopening" alt="Fredesgade opening hours">
                 </div>
             </div>
-            
+
             <div class="mobilehours">
                 <div class="vestergade">
                     <h2 class="Vopeningheading">Vestergade 58A</h2>
@@ -142,7 +152,7 @@
                         <br><br><br><br><br><br><br><br>
                         <p>The café in Vestergade is in the cozy street, in the middle of town. Here the couches are soft and the vibe is chilled. Perfect for dates, a rainy day or a great start for a night on the town.</p>
                     </div>
-                    <img src="images/vestergade_opening.png" class="vestergadeopening">
+                    <img src="images/vestergade_opening.png" class="vestergadeopening" alt="Vestergade opening hours">
                 </div>
             </div>
             <div class="mobilehours">
@@ -152,7 +162,7 @@
                         <br><br><br><br><br><br><br><br>
                         <p>The café in Fredensgade has more space, better time and aside from all the games you already know this is also where all the more advanced games are found.</p>
                     </div>
-                    <img src="images/fredesgade_opening.png" class="fredensgadeopening">
+                    <img src="images/fredesgade_opening.png" class="fredensgadeopening" alt="Fredensgade opening hours">
                 </div>
             </div>
         </div>
@@ -167,14 +177,13 @@
 
             <p>mail@aarhusbraetspilscafe.dk</p>
 
-            <a href="#" class="footericons"><img src="images/insta_icon.png"></a>
-            <a href="#" class="footericons"><img src="images/fb_icon.png"></a>
+            <a href="#" class="footericons"><img src="images/insta_icon.png" alt="Instagram icon"></a>
+            <a href="#" class="footericons"><img src="images/fb_icon.png" alt="Faebook icon"></a>
         </footer>
     </div>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
-
     </script>
 </body>
 
