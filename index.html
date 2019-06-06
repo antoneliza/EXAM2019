@@ -23,6 +23,11 @@
 </head>
 
 <body>
+
+  <div class="loader">
+      <img src="images/loading.gif" alt="Loading..." />
+  </div>
+
     <div id="mobilecontent">
         <div id="mobilemenu">
             <!-- code by Jelena Jovanovic (https://codepen.io/plavookac/pen/qomrMw) START -->
@@ -59,7 +64,7 @@
         </section>
         <img src="images/menuline.png" class="menuline" alt="menu line">
         <section class="landing" id="homelanding">
-        
+
         </section>
 
 
@@ -184,6 +189,10 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
+        window.addEventListener("load", function () {
+            const loader = document.querySelector(".loader");
+            loader.className += " hidden"; // class "loader hidden"
+        });
     </script>
 </body>
 
