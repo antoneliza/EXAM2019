@@ -8,12 +8,12 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
-    
+
     <!-- Code by Michalsnik
     (https://michalsnik.github.io/aos/) -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    
+
     <style>
         < !-- @font-face {
             font-family: Avenir LT Std;
@@ -24,6 +24,11 @@
 </head>
 
 <body>
+
+    <div class="loader">
+        <img src="images/loading.gif" alt="Loading..." />
+    </div>
+
    <div id="mobilecontent">
     <div id="mobilemenu">
         <div class="header"><a href="index.html"><img src="images/logo.png" alt="logo" style="width:75px; margin-left: auto; margin-right: auto; display: block"></a></div>
@@ -97,7 +102,7 @@
 
                 <input type="date" name="visit-day" max="2019-12-31">
                 <input type="time">
-                
+
                 <p>Do you want to book a game?</p>
                 <select name="Game" style="cursor: pointer">
                     <option value="3">- - - - - -</option>
@@ -112,7 +117,7 @@
             </form>
         </div>
         <br>
-        
+
         <div id="map" data-aos="fade-left">
             <img src="images/map.png" class="mapimg" alt="map">
             <img src="images/bigseat.png" id="bigseat1" class="seat" alt="big seat">
@@ -142,13 +147,13 @@
             <img src="images/smallseat.png" id="smallseat7" class="seat" alt="small seat">
             <img src="images/smallseat.png" id="smallseat8" class="seat" alt="small seat">
         </div>
-        
+
     </section>
     <br><br><br><br>
     <a href="booking-confirmation.html">
         <button class="submit">Submit</button>
     </a>
-    
+
     <footer class="footer">
         <br>
         <a href="booking.html">Booking</a>
@@ -161,12 +166,19 @@
         <a href="#" class="footericons"><img src="images/insta_icon.png" alt="Instagram icon"></a>
             <a href="#" class="footericons"><img src="images/fb_icon.png" alt="Faebook icon"></a>
     </footer>
-    
+
     <script src="js.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
+    </script>
+    <script>
+        AOS.init();
+        window.addEventListener("load", function () {
+            const loader = document.querySelector(".loader");
+            loader.className += " hidden"; // class "loader hidden"
+        });
     </script>
 </div>
 </body>
