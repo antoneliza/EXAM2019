@@ -1242,12 +1242,13 @@ input[type=date],
 #map {
     width: 50%;
     float: right;
-    margin-top: 14%;
+    margin-top: 8.5%;
     margin-right: 0%;
 }
 
 .mapimg {
     position: absolute;
+    width: 70%;
 }
 
 .seat {
@@ -1257,57 +1258,72 @@ input[type=date],
 }
 
 #bigseat1 {
-    margin-left: 10%;
-    margin-top: 3%;
+    width: 10.3%;
+    margin-left: 12%;
+    margin-top: 2%;
     transform: rotate(90deg);
 }
 
 #bigseat2,
 #bigseat3 {
-    margin-left: 10%;
-    margin-top: 5%;
+    width: 10.3%;
+    margin-left: 12%;
+    margin-top: 0.3%;
     transform: rotate(90deg);
 }
 
 #bigseat4,
-#bigseat5,
+#bigseat5 {
+    width: 10.3%;
+    margin-left: 5%;
+    margin-top: -4%;
+}
+
 #bigseat6 {
-    margin-left: 6%;
-    margin-top: -5%;
+    width: 12.3%;
+    margin-left: 4%;
+    margin-bottom: 1%;
 }
 
 #bigseat7 {
+    width: 10.3%;
     margin-left: 6%;
-    margin-top: 5%
+    margin-top: 3%
 }
 
 #bigseat8 {
+    width: 10.3%;
     margin-left: 1%
 }
 
 #smallseat1,
 #smallseat3 {
+    width: 12.3%;
     margin-left: 11%;
     margin-top: 2%;
 }
 
 #smallseat2,
 #smallseat4 {
+    width: 12.3%;
     margin-left: 2%;
 }
 
 #smallseat5 {
+    width: 12.3%;
     margin-left: 1%;
-    margin-top: 3%;
+    margin-top: 5%;
 }
 
 #smallseat6,
 #smallseat7 {
+    width: 12.3%;
     margin-left: 1%;
 }
 
 #smallseat8 {
-    margin-left: 18%;
+    width: 12.3%;
+    margin-left: 14%;
 }
 
 .submit {
@@ -1315,18 +1331,23 @@ input[type=date],
     color: #162D50;
     font-size: 1.2rem;
     padding: 0.7rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
     font-weight: 700;
     background-color: #FFDB4D;
     border: none;
-    box-shadow: 0vw 0vw 1vw rgba(0, 0, 0, 0.3);
+    box-shadow: 0vw 0vw 0.5vw rgba(255, 255, 255, 0.3);
     cursor: pointer;
-    transition-duration: 0.8s;
+    transition-duration: 1s;
     float: right;
-    margin-right: 17.8%;
+    margin-right: 15%;
+    margin-top: -2.5%;
 }
 
 .submit:hover {
     font-size: 1rem;
+    margin-right: 15.3%;
+    margin-top: -2.4%;
 }
 
 .bookingconfirmation {
