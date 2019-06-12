@@ -723,6 +723,7 @@
 
     nav a:hover {
         color: #CE3036;
+        transition-duration: 0.7s;
     }
 
     .menuline {
@@ -776,6 +777,11 @@
 
     .footer img {
         padding-bottom: 10px;
+    }
+    
+    .footerlink:hover {
+        color: #CE3036;
+        transition-duration: 0.7s;
     }
 
 }
