@@ -99,8 +99,7 @@ jQuery(document).ready(function($){
             $(this).attr("src","images/smallseatchoose.png");
         };
     });
-    
-    
+
     
     
 });
