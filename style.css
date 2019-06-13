@@ -1228,9 +1228,9 @@ input[type=date],
 .seattext {
     float: right;
     padding: 0;
-    margin-right: 40%;
+    margin-right: 34%;
     text-align: center;
-    margin-top: 7%;
+    margin-top: 5%;
 }
 
 .seattextheading {
@@ -1251,7 +1251,7 @@ input[type=date],
     width: 70%;
 }
 
-.seat {
+.bigseat, .smallseat {
     position: relative;
     background-color: rgba(255, 255, 255, 0);
     cursor: pointer;

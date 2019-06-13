@@ -1,11 +1,11 @@
 
 jQuery(document).ready(function($){
+    
+    
+    
 
     $('#bigseat1').on('click',function(){
         $(".seattextheading").html('1');
-        $("#bigseat1").attr("src","images/bigseatchoose.png");
-
-
     });
 
     $('#bigseat2').on('click',function(){
@@ -67,5 +67,37 @@ jQuery(document).ready(function($){
     $('#smallseat8').on('click',function(){
         $(".seattextheading").html('16');
     });
-
+    
+    $('.bigseat').on('click',function(){
+        if
+            ($(this).attr('data-click-state') == 1) {
+            $(this).attr('data-click-state', 0);
+            $(this).attr("src","images/bigseat.png");
+                $(".seattextheading").html('- - - -');
+        } 
+        else {
+            $(this).attr('data-click-state', 1)
+            $(".bigseat").attr("src","images/bigseat.png");
+            $(".smallseat").attr("src","images/smallseat.png");
+            $(this).attr("src","images/bigseatchoose.png");
+        }
+    
+    });
+    
+    $('.smallseat').on('click',function(){
+        if
+            ($(this).attr('data-click-state') == 1) {
+            $(this).attr('data-click-state', 0);
+            $(this).attr("src","images/smallseat.png");
+                $(".seattextheading").html('- - - -');
+        } 
+        else {
+            $(this).attr('data-click-state', 1)
+            $(".smallseat").attr("src","images/smallseat.png");
+            $(".bigseat").attr("src","images/bigseat.png");
+            $(".smallseat").attr("src","images/smallseat.png");
+            $(this).attr("src","images/smallseatchoose.png");
+        };
+    });
+    
 });
