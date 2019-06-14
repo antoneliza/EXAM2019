@@ -489,6 +489,7 @@
 
     #mobilecontent .submit {
         margin-top: -60%;
+        margin-right: 5%;
     }
 
     #mobilecontent #bookinginformation input[type=checkbox] {
@@ -514,16 +515,130 @@
         color: white;
     }
 
-    .bookingconfirmation {
+    #mobilecontent .bookingconfirmation {
         display: block;
         width: 80%;
         margin-left: auto;
         margin-right: auto;
-        margin-top: 5%;
+        margin-top: 15%;
         margin-bottom: 15vw;
     }
-
-
+    
+    #mobilecontent #map {
+        display: block;
+        opacity: 1;
+        width: 90%;
+        margin-right: 32.5%;
+        margin-bottom: 70%;
+    }
+    
+    #mobilecontent .mapimg {
+        width: 100%;
+    }
+    
+    #mobilecontent #bigseat1 {
+        display: block;
+        width: 15%;
+        margin-left: 16%;
+        margin-top: 1%;
+    }
+    
+    #mobilecontent #bigseat2 {
+        display: block;
+        width: 15%;
+        margin-left: 16%;
+        margin-top: -7%;
+    }
+    
+    #mobilecontent #bigseat3 {
+        display: block;
+        width: 15%;
+        margin-left: 16%;
+        margin-top: -7%;    
+    }
+    
+    #mobilecontent #bigseat4 {
+        display: block;
+        width: 15%;
+        margin-left: 40%;
+        margin-top: -15%;
+    }
+    
+    #mobilecontent #bigseat5 {
+        display: block;
+        width: 15%;
+        margin-left: 40%;
+        margin-top: -15%;
+    }
+    
+    #mobilecontent #bigseat6 {
+        display: block;
+        width: 19%;
+        margin-left: 37%;
+        margin-top: -8%;
+    }
+    
+    #mobilecontent #bigseat7 {
+        display: block;
+        width: 15%;
+        margin-left: 7%;
+        margin-top: -1%;
+    }
+    
+    #mobilecontent #bigseat8 {
+        display: block;
+        width: 15%;
+        margin-left: 25%;
+        margin-top: -17.7%;
+    }
+    
+    #mobilecontent #smallseat1 {
+        display: block;
+        width: 19%;
+        margin-top: -3%;
+    }
+    
+    #mobilecontent #smallseat2 {
+        display: block;
+        width: 19%;
+        margin-top: -7%;
+        margin-left: 32%;
+    }
+    
+    #mobilecontent #smallseat5 {
+        display: block;
+        width: 19%;
+        margin-top: 2%;
+    }
+    
+    #mobilecontent #smallseat6 {
+        display: block;
+        width: 19%;
+        margin-left: 22%;
+        margin-top: -7%;
+    }
+    
+    #mobilecontent #smallseat7 {
+        display: block;
+        width: 19%;
+        margin-left: 43%;
+        margin-top: -7%;
+    }
+    
+    #mobilecontent #smallseat8 {
+        display: block;
+        width: 19%;
+        margin-left: 79%;
+        margin-top: -7%;
+    }
+    
+    #mobilecontent .seattext {
+        position: absolute;
+        width: 20%;
+        margin-left: 80%;
+        margin-top: -25%;
+    }
+    
     /* SNACKS AND DRINKS MOBILE PAGE STARTS */
 
     #desktopfood {
