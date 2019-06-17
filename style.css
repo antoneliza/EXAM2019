@@ -1714,3 +1714,11 @@ h3 {
   color: white;
   transform: rotateY(180deg);
 }
+
+/* SHOP PAGE STARTS*/
+
+#myUL .shopping {
+    width: 30px;
+    padding-left: 10px;
+    vertical-align: middle;
+}
